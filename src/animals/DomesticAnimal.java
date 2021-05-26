@@ -11,5 +11,13 @@ public class DomesticAnimal extends Animal {
         return new Object();
     }
 
-
+    boolean takeDamage() {
+        //TODO
+        return true;
+    }
+    boolean heal ()
+    {
+        //TODO
+        return true;
+    }
 }

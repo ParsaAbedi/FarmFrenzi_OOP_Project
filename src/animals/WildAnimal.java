@@ -6,6 +6,11 @@ public class WildAnimal extends Animal {
     {
         return false;
     }
+    boolean buildCage ()
+    {
+        //TODO
+        return false;
+    }
 
     @Override
     public boolean move() {
