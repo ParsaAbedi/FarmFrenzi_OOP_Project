@@ -1,5 +1,7 @@
 package buildings;
 
+import products.Products;
+
 import java.util.ArrayList;
 
 public class ProductiveBuilding extends Buildings{
