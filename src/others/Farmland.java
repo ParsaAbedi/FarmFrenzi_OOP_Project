@@ -4,7 +4,7 @@ import animals.Animal;
 import buildings.ProductiveBuilding;
 import buildings.Well;
 import products.Products;
-
+import javax.swing.text.Position;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -15,7 +15,9 @@ public class Farmland {
     private ArrayList<Products> products;
     private Well well;
 /*    private Shop shop;*/
-    HashMap <Position, Animal> farmLandAnimal  = new HashMap<Position , Animal >();
-    HashMap <Position, Products> farmLandProduct = new HashMap<Position , Products>();
-    HashMap <Position,Integer> farmLandPlant  = new HashMap<Position , Integer >();
+    HashMap <FarmPosition, Animal> farmLandAnimal  = new HashMap<>();
+    HashMap <FarmPosition, Products> farmLandProduct = new HashMap<>();
+    HashMap <FarmPosition,Integer> farmLandPlant  = new HashMap<>();
+    HashMap <FarmPosition,Boolean> farmLandGrass  = new HashMap<>();
+
 }

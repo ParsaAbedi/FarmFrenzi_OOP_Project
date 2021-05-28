@@ -1,10 +1,9 @@
 package animals;
 
-public class Lion extends WildAnimal{
-
+public class Tiger extends WildAnimal {
     private int cageTimes;
-    public Lion() {
-        super(1,3);
+    public Tiger() {
+        super(2,4);
         cageTimes=0;
     }
     public boolean caged(){
