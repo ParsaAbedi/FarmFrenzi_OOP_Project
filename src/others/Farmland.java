@@ -18,6 +18,6 @@ public class Farmland {
     HashMap <FarmPosition, Animal> farmLandAnimal  = new HashMap<>();
     HashMap <FarmPosition, Products> farmLandProduct = new HashMap<>();
     HashMap <FarmPosition,Integer> farmLandPlant  = new HashMap<>();
-    HashMap <FarmPosition,Boolean> farmLandGrass  = new HashMap<>();
+    HashMap <FarmPosition,Boolean> farmLandGrass  = new HashMap<>();//grass
 
 }

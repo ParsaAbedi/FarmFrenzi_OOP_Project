@@ -4,7 +4,7 @@ public class Lion extends WildAnimal{
 
     private int cageTimes;
     public Lion() {
-        super(1,3);
+        super(1,3,300);
         cageTimes=0;
     }
     public boolean caged(){
