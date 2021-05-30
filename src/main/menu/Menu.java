@@ -60,6 +60,11 @@ public abstract class Menu {
         nextMenu.show();
         nextMenu.execute();
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void show() {
         System.out.println(this.name + ": ");
         for (Integer integer : submenus.keySet()) {
