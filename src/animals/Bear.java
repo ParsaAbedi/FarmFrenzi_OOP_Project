@@ -5,7 +5,7 @@ public class Bear extends WildAnimal{
     private int cageTimes;
 
     public Bear(int velocity, int freedom, int cageTimes) {
-        super(1, 4);
+        super(1, 4,400);
         this.cageTimes = 0;
     }
 
