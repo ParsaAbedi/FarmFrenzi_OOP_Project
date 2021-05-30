@@ -13,6 +13,6 @@ public class WareHouse extends Buildings{
         super(loadingTime, cost);
         this.capacity=30;
         this.storedProducts=new ArrayList<>();
-
+        this.wildAnimals=new ArrayList<>();
     }
 }

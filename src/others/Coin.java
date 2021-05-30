@@ -7,7 +7,7 @@ public class Coin {
         return coins;
     }
 
-    public static boolean setCoins(int coins) {
+    public static boolean buy(int coins) {
         if(Coin.coins>= coins)
         {
             Coin.coins += coins;
@@ -15,5 +15,9 @@ public class Coin {
         }
         else
             return false;
+    }
+
+    public static void addCoins(int coins) {
+        Coin.coins += coins;
     }
 }

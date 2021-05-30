@@ -1,4 +1,7 @@
 package products;
 
-public class Milk {
+public class Milk extends Products{
+    public Milk() {
+        super(25);
+    }
 }
