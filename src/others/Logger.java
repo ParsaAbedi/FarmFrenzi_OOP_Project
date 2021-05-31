@@ -31,16 +31,7 @@ public class Logger {
     }
     public boolean writeInfo(String message)
     {
-       /* try {
-            pw = new PrintWriter(filePath);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return false;
-        }
-        pw.println("[Info],"+date.toString()+","+message+"\n");
-        pw.flush();
-        pw.close();
-        return true;*/
+
         try {
             Files.write(Paths.get(filePath), ("[Info],"+date.toString()+","+message+"\n").getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
