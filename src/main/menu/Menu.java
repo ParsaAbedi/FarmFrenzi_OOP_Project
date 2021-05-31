@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.util.regex.*;
 import others.*;
 public abstract class Menu {
+    public static Logger logger = new Logger(new User());
     static Manager manager = new Manager();
     protected Menu parentMenu ;
     protected HashMap<Integer , Menu> submenus  ;
@@ -36,6 +37,7 @@ public abstract class Menu {
                 nextMenuNum = Integer.parseInt(command);
                 if (nextMenuNum == submenus.size() + 1) {
                     if (this.parentMenu == null) {
+                        logger.writeInfo("System exit!");
                         System.exit(1);
                     }
                     else {
@@ -44,15 +46,18 @@ public abstract class Menu {
                     }
                 }
                 else if (nextMenuNum < submenus.size() + 1 && nextMenuNum > 0) {
+                    logger.writeInfo("Submenu number "+nextMenuNum+" selected!");
                     nextMenu = submenus.get(nextMenuNum);
                     quit = true;
                 }
                 else
                 {
+                    logger.writeError("Invalid input in "+this.name);
                     System.err.println("Invalid input!");
                 }
             }
             else {
+                logger.writeError("Invalid input in "+this.name);
                 System.err.println("Invalid input!");
             }
 
@@ -66,6 +71,7 @@ public abstract class Menu {
     }
 
     public void show() {
+        logger.writeInfo("Entered "+this.name);
         System.out.println(this.name + ": ");
         for (Integer integer : submenus.keySet()) {
             System.out.println(integer + ". " + submenus.get(integer).getName());

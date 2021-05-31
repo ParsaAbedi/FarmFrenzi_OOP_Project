@@ -3,6 +3,7 @@ package animals;
 import products.Products;
 
 public abstract class DomesticAnimal extends Animal {
+    private final int  DAMAGE_PER_TIME = 10;
     private int price;
     private int timeToCreateProduct;
 
@@ -31,13 +32,20 @@ public abstract class DomesticAnimal extends Animal {
         this.timeToCreateProduct = timeToCreateProduct;
     }
 
-    boolean takeDamage() {
-        //TODO
+    boolean takeDamage( int damage) {
+        if(lives-DAMAGE_PER_TIME <0)
+        {
+            lives=0;
+            if(!die())
+                return false;
+        }
+        else
+            lives-=DAMAGE_PER_TIME;
         return true;
     }
     boolean heal ()
     {
-        //TODO
+        lives = MAX_LIVES;
         return true;
     }
 }

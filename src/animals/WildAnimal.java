@@ -22,9 +22,4 @@ public abstract class WildAnimal extends Animal {
         //TODO
         return false;
     }
-
-    @Override
-    public boolean move() {
-        return false;
-    }
 }
