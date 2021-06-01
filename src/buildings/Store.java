@@ -10,7 +10,7 @@ public class Store extends Buildings {
 
 
     public Store() {
-        super(0, 0);
+        super( 0);
         this.buildings = new ArrayList<>();
 
     }

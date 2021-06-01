@@ -43,6 +43,14 @@ public class InputProcessor extends Menu{
             {
                 work(command.split("\\s"));
             }
+            else if(Pattern.matches("build\s+[a-zA-Z]+" , command))
+            {
+                build(command.split("\\s"));
+            }
+            else if(Pattern.matches("upgrade\s+[a-zA-Z]+" , command))
+            {
+                build(command.split("\\s"));
+            }
             else if(Pattern.matches("cage\s+[0-9]+\s+[0-9]+" , command))
             {
                 cage(command.split("\\s"));
@@ -73,7 +81,25 @@ public class InputProcessor extends Menu{
             }
         }
 
+    }
+
+    private void build(String[] strings){
+        if(manager.build(strings[1]))
+        {
+            done();
         }
+        else
+            error();
+    }
+
+    private void upgrade(String[] strings){
+        if(manager.upgrade(strings[1]))
+        {
+            done();
+        }
+        else
+            error();
+    }
 
     private void returnToMenu() {
         //TODO
@@ -85,100 +111,104 @@ public class InputProcessor extends Menu{
         //TODO
         if(manager.truckGo())
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
     }
 
     private void unloadTruck(String[] split) {
-        //TODO
         if(manager.unloadTruck(split[2]))
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
-        else
-            System.err.printf("TASK FAILED!\n");
+        else error();
     }
 
     private void loadTruck(String[] split) {
-        //TODO
         if(manager.loadTruck(split[2]))
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
+    }
+
+    private void done(){
+        System.out.printf("COMPLETED!\n");
+    }
+
+    private void error(){
+        System.err.printf("TASK FAILED!\n");
     }
 
     private void turn(String[] split) {
         //TODO
         if(manager.turn(split[1]))
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
     }
 
     private void cage(String[] split) {
         //TODO
         if(manager.cage(split[1], split[2]))
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
     }
 
     private void work(String[] split) {
-        //TODO
+
         if(manager.work(split[1]))
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
     }
 
     private void plant(String[] split) {
         //TODO
         if(manager.plant(split[1], split[2]))
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
     }
 
     private void well() {
-        //TODO
         if(manager.well())
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
     }
 
     private void pickup(String[] split) {
         //TODO
         if(manager.pickup(split[1], split[2]))
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
     }
 
     private void buy(String[] split) {
         //TODO
         if(manager.buy(split[1]))
         {
-            System.err.printf("COMPLETED!\n");
+            done();
         }
         else
-            System.err.printf("TASK FAILED!\n");
+            error();
     }
 }
 

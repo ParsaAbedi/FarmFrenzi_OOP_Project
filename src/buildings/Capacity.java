@@ -2,6 +2,7 @@ package buildings;
 
 public enum Capacity {
     PRIMERY(1),
+    MANUFACTURED(2),
     MAIN(4);
     private int capacity;
 

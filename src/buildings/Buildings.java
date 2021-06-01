@@ -3,13 +3,8 @@ package buildings;
 import others.FarmPosition;
 
 public abstract class Buildings {
-    private int  level,loadingTime , cost;
-    private FarmPosition position;
-    private time timeLeft;
-    public Buildings( int loadingTime, int cost) {
-        this.level = 1;
-        this.loadingTime = loadingTime;
+    private int   cost;
+    public Buildings(  int cost) {
         this.cost = cost;
-        this.position = position;
     }
 }

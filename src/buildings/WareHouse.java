@@ -6,13 +6,21 @@ import products.Products;
 import java.util.ArrayList;
 
 public class WareHouse extends Buildings{
-    private int capacity ;
+    private static int capacity ;
     private static ArrayList<Products> storedProducts;
     ArrayList<WildAnimal> wildAnimals;
-    public WareHouse(int loadingTime, int cost) {
-        super(loadingTime, cost);
-        this.capacity=30;
-        this.storedProducts=new ArrayList<>();
+    private static WareHouse ourInstance;
+
+    public static WareHouse getInstance() {
+        if (ourInstance == null) {
+            ourInstance = new WareHouse();
+        }
+        return ourInstance;
+    }
+    public WareHouse() {
+        super(0);
+        capacity=30;
+        storedProducts=new ArrayList<>();
         this.wildAnimals=new ArrayList<>();
     }
 
@@ -20,7 +28,11 @@ public class WareHouse extends Buildings{
         return storedProducts;
     }
 
-    public int getCapacity() {
+    public static int getCapacity() {
         return capacity;
+    }
+
+    public static void setCapacity(int capacity) {
+        WareHouse.capacity = capacity;
     }
 }

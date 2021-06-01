@@ -9,15 +9,15 @@ import java.nio.file.StandardOpenOption;
 import java.util.Date;
 
 public class Logger {
-    private String filePath = "logger.txt";
+    private static String filePath = "logger.txt";
     private PrintWriter pw = null;
     private User user;
-    Date date = new Date();
+    static Date date = new Date();
 
     public Logger(User user) {
         this.user = user;
     }
-    public boolean writeError(String message)
+    public static boolean writeError(String message)
     {
 
         try {
@@ -29,7 +29,7 @@ public class Logger {
         return true;
 
     }
-    public boolean writeInfo(String message)
+    public static boolean writeInfo(String message)
     {
 
         try {

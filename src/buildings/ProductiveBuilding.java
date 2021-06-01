@@ -1,5 +1,6 @@
 package buildings;
 
+import others.Farmland;
 import products.Products;
 
 import java.util.ArrayList;
@@ -7,21 +8,18 @@ import java.util.ArrayList;
 public class ProductiveBuilding extends Buildings{
     private Products neededProducts;
     private Products mainProduct ;
-    private Capacity capacity;
     private int level;
     private int numOfProductForSingleProduce;
     private int timeLeft;
     private boolean built;
 
-    public ProductiveBuilding(int loadingTime, int cost,Capacity capacity,
-                              Products neededProducts) {
-        super(loadingTime, cost);
+    public ProductiveBuilding( int cost,Products neededProducts) {
+        super(cost);
         this.neededProducts = neededProducts;
-        this.capacity=capacity;
         this.level=1;
         this.built=false;
         this.numOfProductForSingleProduce=1;
-        this.timeLeft=0;
+        this.timeLeft=-1;
     }
 
     public boolean isBuilt() {
@@ -32,21 +30,37 @@ public class ProductiveBuilding extends Buildings{
         this.built = built;
     }
 
-    boolean produce(int timeLeft, Products uniqeProduct){
-        int c=0;
-        for (Products storedProduct : WareHouse.getStoredProducts()) {
+    boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland){
+        int num=0;
+        for (Products storedProduct : wareHouse.getStoredProducts()) {
             if (storedProduct.equals(this.neededProducts)){
-                c++;
-                if (c==this.level) {
+                if (this.level==1){
                     this.timeLeft=timeLeft;
                     this.mainProduct=uniqeProduct;
-                    while (c!=0){
-                        WareHouse.getStoredProducts().remove(this.neededProducts);
-                        WareHouse.getStoredProducts().add(this.mainProduct);
-                        c--;
-                    }
-                    return true;
+                    wareHouse.getStoredProducts().remove(this.neededProducts);
+                    farmland.getProducts().add(this.mainProduct);
                 }
+                else if (this.level==2){
+                    for (Products product : wareHouse.getStoredProducts()) {
+                        if (storedProduct.equals(this.neededProducts))num++;
+                    }
+                    if (num==1){
+                        if (timeLeft%2==0)this.timeLeft=timeLeft/2;
+                        else this.timeLeft=(timeLeft/2)+1;
+                        this.mainProduct=uniqeProduct;
+                        wareHouse.getStoredProducts().remove(this.neededProducts);
+                        farmland.getProducts().add(this.mainProduct);
+                    }
+                    else if (num>1){
+                        this.timeLeft=timeLeft;
+                        this.mainProduct=uniqeProduct;
+                        wareHouse.getStoredProducts().remove(this.neededProducts);
+                        wareHouse.getStoredProducts().remove(this.neededProducts);
+                        farmland.getProducts().add(this.mainProduct);
+                        farmland.getProducts().add(this.mainProduct);
+                    }
+                }
+                return true;
             }
         }
         return false;
@@ -59,4 +73,5 @@ public class ProductiveBuilding extends Buildings{
         }
         return false;
     }
+
 }

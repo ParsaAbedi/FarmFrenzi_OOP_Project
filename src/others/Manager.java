@@ -3,6 +3,8 @@ package others;
 import buildings.*;
 import products.*;
 
+import java.io.File;
+import java.util.Calendar;
 import java.util.regex.Pattern;
 
 public class Manager {
@@ -14,14 +16,19 @@ public class Manager {
     private Mill mill;
     private WeavingFactory weavingFactory;
 
+    private Truck truck;
+    private WareHouse wareHouse;
+
     public Manager() {
         this.farmland = new Farmland();
-        this.sewingWorkshop = new SewingWorkshop();
-        this.cookieBakery = new CookieBakery();
-        this.iceCreamShop = new IceCreamShop();
-        this.milkFactory = new MilkFactory();
-        this.mill = new Mill();
-        this.weavingFactory = new WeavingFactory();
+        this.sewingWorkshop = SewingWorkshop.getInstance();
+        this.cookieBakery = CookieBakery.getInstance();
+        this.iceCreamShop = IceCreamShop.getInstance();
+        this.milkFactory = MilkFactory.getInstance();
+        this.mill = Mill.getInstance();
+        this.weavingFactory = WeavingFactory.getInstance();
+        this.truck=Truck.getInstance();
+        this.wareHouse= WareHouse.getInstance();
     }
 
     public boolean Login(String command) {
@@ -37,19 +44,65 @@ public class Manager {
     }
 
     public boolean truckGo() {
-        //TODO
-        return true;
-    }
+        if (!truck.isOnTheMove()){
+            truck.setOnTheMove(true);
+            Logger.writeInfo("truck started its own path");
+            return true;
+        }
+        Logger.writeInfo("truck is already on the roads!");
+        return false;
+    }//DONE
 
-    public boolean unloadTruck(String s) {
-        //TODO
-        return true;
-    }
+    public boolean unloadTruck(String productName) {
+        if (!truck.isOnTheMove()){
+            for (Products storedProduct : truck.getProducts()) {
+                if (storedProduct.equals(productName)){
+                    if (wareHouse.getCapacity()+storedProduct.getCapacity()>30){
+                        Logger.writeError("the product space is more than capacity and we can not unload it");
+                        return false;
+                    }
+                    else {
+                        truck.getProducts().remove(storedProduct);
+                        truck.setCAPACITY(truck.getCAPACITY()-storedProduct.getCapacity());
+                        wareHouse.getStoredProducts().remove(storedProduct);
+                        wareHouse.setCapacity(wareHouse.getCapacity()+storedProduct.getCapacity());
+                        Logger.writeInfo("unload product successful ");
+                        return true;
+                    }
+                }
+            }
+            Logger.writeError("you do not have this product in your truck");
+            return false;
+        }
+        Logger.writeError("truck is on the move");
+        return false;
 
-    public boolean loadTruck(String s) {
-        //TODO
-        return true;
-    }
+    }//DONE
+
+    public boolean loadTruck(String productName) {
+        if (!truck.isOnTheMove()){
+            for (Products storedProduct : wareHouse.getStoredProducts()) {
+                if (storedProduct.equals(productName)){
+                    if (truck.getCAPACITY()+storedProduct.getCapacity()>15){
+                        Logger.writeError("the product space is more than capacity");
+                        return false;
+                    }
+                    else {
+                        truck.getProducts().add(storedProduct);
+                        truck.setCAPACITY(truck.getCAPACITY()+storedProduct.getCapacity());
+                        wareHouse.getStoredProducts().remove(storedProduct);
+                        wareHouse.setCapacity(wareHouse.getCapacity()-storedProduct.getCapacity());
+                        Logger.writeInfo("loading product successful ");
+                        return true;
+                    }
+                }
+            }
+            Logger.writeError("you do not have this product in your warehouse");
+            return false;
+        }
+        Logger.writeError("truck is on the move");
+        return false;
+    }//DONE
 
     public boolean turn(String s) {
         //TODO
@@ -60,42 +113,149 @@ public class Manager {
         //TODO
         return true;
     }
-    private void done(){
-        System.out.println("done");
-    }
-    private void error(){
-        System.err.println("insufficient supply MAN!!");
-    }
+
     public boolean work(String workShopName) {
         workShopName = workShopName.trim();
         workShopName= workShopName.toLowerCase();
-        if (Pattern.matches("^cookie\\s*bakery$" , workShopName)){
-            if (this.cookieBakery.produce(5,new Bread())){
-                done();
-            }else error();
-        }else if (Pattern.matches("^icecream\\s*shop$" , workShopName)){
-            if (this.iceCreamShop.produce(7,new IceCream())){
-                done();
-            }else error();
-        }else if (Pattern.matches("^milk\\s*factory$" , workShopName)){
-            if (this.milkFactory.produce(6,new PastorizedMilk())){
-                done();
-            }else error();
-        }else if (Pattern.matches("^mill$" , workShopName)){
-            if (this.mill.produce(4,new Flour())){
-                done();
-            }else error();
-        }else if (Pattern.matches("^sewing\\s*workshop$" , workShopName)){
-            if (this.sewingWorkshop.produce(6,new Clothes())){
-                done();
-            }else error();
-        }else if (Pattern.matches("^weaving\\s*factory$" , workShopName)){
-            if (this.weavingFactory.produce(5,new Piece())){
-                done();
-            }else error();
+        if (Pattern.matches("^cookie\\s*bakery$" , workShopName)
+                && farmland.getBuildings().contains(cookieBakery)){
+            if (this.cookieBakery.produce(5,new Bread(),wareHouse,farmland)){
+                Logger.writeInfo("cookie bakery is initilized");
+                return true;
+            }
         }
-        return true;
-    }
+        else if (Pattern.matches("^icecream\\s*shop$" , workShopName)&&
+                farmland.getBuildings().contains(iceCreamShop)){
+            if (this.iceCreamShop.produce(7,new IceCream(),wareHouse,farmland)){
+                Logger.writeInfo("ice cream shop is initilized");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^milk\\s*factory$" , workShopName)&&
+                farmland.getBuildings().contains(milkFactory)){
+            if (this.milkFactory.produce(6,new PastorizedMilk(),wareHouse,farmland)){
+                Logger.writeInfo("milk factory is initilized");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^mill$" , workShopName)&&
+                farmland.getBuildings().contains(mill)){
+            if (this.mill.produce(4,new Flour(),wareHouse,farmland)){
+                Logger.writeInfo("mill is initilized");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^sewing\\s*workshop$" , workShopName) &&
+                farmland.getBuildings().contains(sewingWorkshop)){
+            if (this.sewingWorkshop.produce(6,new Clothes(),wareHouse,farmland)){
+                Logger.writeInfo("sewing workshop is initilized");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^weaving\\s*factory$" , workShopName)&&
+                farmland.getBuildings().contains(weavingFactory)){
+            if (this.weavingFactory.produce(5,new Piece(),wareHouse,farmland)){
+                Logger.writeInfo("weaving factory is initilized");
+                return true;
+            }
+        }
+        Logger.writeError("you ve got the wrong name or this building is not build yet");
+        return false;
+    }//DONE
+
+    public boolean upgrade(String workShopName) {
+        workShopName = workShopName.trim();
+        workShopName= workShopName.toLowerCase();
+        if (Pattern.matches("^cookie\\s*bakery$" , workShopName) &&
+                farmland.getBuildings().contains(cookieBakery)){
+            if (this.cookieBakery.upgrade()){
+                Logger.writeInfo("cookie bakery upgraded");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^icecream\\s*shop$" , workShopName)&&
+                farmland.getBuildings().contains(iceCreamShop)){
+            if (this.iceCreamShop.upgrade()){
+                Logger.writeInfo("ice cream shop upgraded");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^milk\\s*factory$" , workShopName)&&
+                farmland.getBuildings().contains(milkFactory)){
+            if (this.milkFactory.upgrade()){
+                Logger.writeInfo("milk factory upgraded");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^mill$" , workShopName)&&
+                farmland.getBuildings().contains(mill)){
+            if (this.mill.upgrade()){
+                Logger.writeInfo("mill upgraded");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^sewing\\s*workshop$" , workShopName) &&
+                farmland.getBuildings().contains(sewingWorkshop)){
+            if (this.sewingWorkshop.upgrade()){
+                Logger.writeInfo("sewing workshop upgraded");
+                return true;
+            }
+        }
+        else if (Pattern.matches("^weaving\\s*factory$" , workShopName)&&
+                farmland.getBuildings().contains(weavingFactory)){
+            if (this.weavingFactory.upgrade()){
+                Logger.writeInfo("weaving factory upgraded");
+                return true;
+            }
+        }
+        Logger.writeError("you ve got the wrong name or this building is not build yet or your biulding level is MAX");
+        return false;
+    }//DONE
+
+    public boolean build(String workShopName) {
+        workShopName = workShopName.trim();
+        workShopName= workShopName.toLowerCase();
+        if (Pattern.matches("^cookie\\s*bakery$" , workShopName) &&
+                !farmland.getBuildings().contains(cookieBakery)){
+            Logger.writeInfo("cookie bakery built");
+            farmland.getBuildings().add(cookieBakery);
+            return true;
+        }
+        else if (Pattern.matches("^icecream\\s*shop$" , workShopName)&&
+                !farmland.getBuildings().contains(iceCreamShop)){
+            Logger.writeInfo("ice cream shop built");
+            farmland.getBuildings().add(iceCreamShop);
+            return true;
+        }
+        else if (Pattern.matches("^milk\\s*factory$" , workShopName)&&
+                !farmland.getBuildings().contains(milkFactory)){
+            Logger.writeInfo("milk factory built");
+            farmland.getBuildings().add(milkFactory);
+            return true;
+        }
+        else if (Pattern.matches("^mill$" , workShopName)&&
+                !farmland.getBuildings().contains(mill)){
+            Logger.writeInfo("mill built");
+            farmland.getBuildings().add(mill);
+            return true;
+        }
+        else if (Pattern.matches("^sewing\\s*workshop$" , workShopName) &&
+                !farmland.getBuildings().contains(sewingWorkshop)){
+            Logger.writeInfo("sewing workshop built");
+            farmland.getBuildings().add(sewingWorkshop);
+            return true;
+        }
+        else if (Pattern.matches("^weaving\\s*factory$" , workShopName)&&
+                !farmland.getBuildings().contains(sewingWorkshop)){
+            Logger.writeInfo("weaving factory built");
+            farmland.getBuildings().add(weavingFactory);
+            return true;
+        }
+        Logger.writeError("you ve got the wrong name or this building is built yet");
+        return false;
+    }//DONE
+
+
 
     public boolean plant(String s, String s1) {
         //TODO
@@ -103,13 +263,12 @@ public class Manager {
     }
 
     public boolean well() {
-        //TODO
-        return true;
-    }
+        if (farmland.getWell().drainWell())return true;
+        return false;
+    }//DONE
 
     public boolean pickup(String s, String s1) {
-        //TODO
-        return true;
+        return false;
     }
 
     public boolean buy(String s) {
