@@ -7,3 +7,227 @@
 [Info],Mon May 31 12:13:31 IRDT 2021,Submenu number 1 selected!
 [Info],Mon May 31 12:13:31 IRDT 2021,Entered START MENU
 [Info],Mon May 31 12:13:31 IRDT 2021,System exit!
+[Info],Tue Jun 01 08:52:40 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 08:52:40 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 08:54:11 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 08:54:11 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 08:54:11 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 08:54:11 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 08:54:11 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 08:58:04 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 08:58:04 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 08:58:04 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 08:58:04 IRDT 2021,System exit!
+[Info],Tue Jun 01 09:02:38 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 09:02:38 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 09:03:26 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 09:03:26 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 09:03:26 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 09:03:26 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 09:03:26 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 09:03:26 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:25:41 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:25:41 IRDT 2021,Invalid input in START MENU
+[Info],Tue Jun 01 10:25:41 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 10:25:41 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:26:44 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:26:44 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:26:44 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:26:44 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:26:44 IRDT 2021,System exit!
+[Info],Tue Jun 01 10:29:14 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:29:14 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:29:14 IRDT 2021,Submenu number 1 selected!
+[Error],Tue Jun 01 10:29:14 IRDT 2021,Invalid input!
+[Error],Tue Jun 01 10:29:14 IRDT 2021,Invalid input!
+[Error],Tue Jun 01 10:29:14 IRDT 2021,Invalid input!
+[Info],Tue Jun 01 10:32:08 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:32:08 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 10:32:08 IRDT 2021,Submenu number 1 selected!
+[Error],Tue Jun 01 10:32:08 IRDT 2021,Invalid input!
+[Info],Tue Jun 01 10:32:08 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:32:08 IRDT 2021,System exit!
+[Info],Tue Jun 01 10:36:31 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:36:31 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 10:36:31 IRDT 2021,Submenu number 1 selected!
+[Error],Tue Jun 01 10:36:31 IRDT 2021,Invalid input!
+[Error],Tue Jun 01 10:36:31 IRDT 2021,Invalid input!
+[Info],Tue Jun 01 10:36:31 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:36:31 IRDT 2021,System exit!
+[Info],Tue Jun 01 10:39:26 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:39:26 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 10:39:26 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 10:42:14 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Submenu number 3 selected!
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 10:42:14 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:42:14 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:42:14 IRDT 2021,System exit!
+[Info],Tue Jun 01 10:44:22 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:44:22 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 10:44:22 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 10:48:36 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:48:36 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:48:36 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:48:36 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:49:17 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:49:17 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:49:17 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:49:17 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 10:49:17 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 10:49:17 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:49:17 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:51:27 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:51:27 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 10:51:27 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 10:51:27 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 10:51:27 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:54:00 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:54:00 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 10:54:00 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 10:58:38 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 10:58:38 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 10:58:38 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 11:05:28 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 11:05:28 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 11:05:28 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 15:50:36 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 15:50:36 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 15:50:36 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 15:52:02 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 15:52:02 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 15:52:02 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 15:53:11 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 15:53:11 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 15:53:11 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 15:54:51 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 15:54:51 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 15:54:51 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 15:55:32 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 15:55:32 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 15:55:32 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 15:55:32 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 15:55:32 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 15:55:32 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 15:55:32 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 15:58:28 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 15:58:28 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 15:58:28 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 15:59:08 IRDT 2021,Entered START MENU
+[Error],Tue Jun 01 15:59:08 IRDT 2021,Invalid input in START MENU
+[Info],Tue Jun 01 15:59:08 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 15:59:08 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 16:00:13 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:00:13 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 16:00:13 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 16:09:38 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:09:38 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 16:09:38 IRDT 2021,Signed up
+	username: parsa	password: as
+[Info],Tue Jun 01 16:21:15 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:21:15 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 16:21:15 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 16:21:51 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:21:51 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 16:21:51 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 16:21:51 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:21:51 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 16:21:51 IRDT 2021,Sign up failed!
+[Info],Tue Jun 01 16:21:51 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:21:51 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 16:21:51 IRDT 2021,Logged in!
+	others.Authentication@401e7803
+[Info],Tue Jun 01 16:21:51 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:21:51 IRDT 2021,System exit!
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Logged in!
+	others.Authentication@782663d3
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Signed up
+	username: Ali	password: nourian
+[Info],Tue Jun 01 16:24:55 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:24:55 IRDT 2021,System exit!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Signed up
+	username: ALi	password: nour
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Submenu number 1 selected!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,PASSWORD IS WRONG!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,PASSWORD IS WRONG!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,Invalid input!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,PASSWORD IS WRONG!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,PASSWORD IS WRONG!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,PASSWORD IS WRONG!
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Submenu number 1 selected!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,PASSWORD IS WRONG!
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Signed up
+	username: me	password: 1
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,THIS USERNAME IS NOT AVAILABLE!
+[Error],Tue Jun 01 16:57:58 IRDT 2021,THIS USERNAME IS NOT AVAILABLE!
+[Info],Tue Jun 01 16:57:58 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 16:57:58 IRDT 2021,System exit!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 01 17:00:59 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 17:00:59 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 17:00:59 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 17:00:59 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 17:00:59 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 17:00:59 IRDT 2021,System exit!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 01 17:03:08 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 17:03:08 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 01 17:04:58 IRDT 2021,Entered START MENU
+[Error],Tue Jun 01 17:04:58 IRDT 2021,Invalid input in START MENU
+[Info],Tue Jun 01 17:04:58 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 17:04:58 IRDT 2021,Logged in!
+	others.Authentication@782663d3
+[Info],Tue Jun 01 17:04:58 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 17:04:58 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 17:04:58 IRDT 2021,Submenu number 1 selected!
+[Error],Tue Jun 01 17:04:58 IRDT 2021,PASSWORD IS WRONG!
+[Info],Tue Jun 01 17:04:58 IRDT 2021,Logged in!
+	others.Authentication@706a04ae
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 01 17:06:39 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 17:06:39 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 01 17:06:39 IRDT 2021,Logged in!
+	others.Authentication@782663d3
+[Info],Tue Jun 01 17:06:39 IRDT 2021,Submenu number 2 selected!
+[Info],Tue Jun 01 17:06:39 IRDT 2021,Entered START MENU
+[Info],Tue Jun 01 17:06:39 IRDT 2021,Submenu number 2 selected!
+[Error],Tue Jun 01 17:06:39 IRDT 2021,THIS USERNAME IS NOT AVAILABLE!
+[Info],Tue Jun 01 17:06:39 IRDT 2021,Signed up
+	username: Parisa	password: pa
+[Info],Tue Jun 01 17:06:39 IRDT 2021,Submenu number 3 selected!

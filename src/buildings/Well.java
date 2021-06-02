@@ -20,8 +20,5 @@ public class Well implements time {
         }
         else return false;
     }
-    @Override
-    public boolean order() {
-        return false;
-    }
+
 }

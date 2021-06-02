@@ -4,7 +4,6 @@ import others.Manager;
 import java.util.regex.Pattern;
 
 public class InputProcessor extends Menu{
-    private Manager manager = new Manager();
     public  InputProcessor(Menu parent ){
         super(parent , "START");
     }
@@ -70,6 +69,7 @@ public class InputProcessor extends Menu{
             }
             else {
                 System.err.println("Invalid input!");
+                logger.writeError("Invalid input!");
             }
         }
 

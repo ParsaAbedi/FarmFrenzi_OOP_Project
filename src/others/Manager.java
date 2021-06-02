@@ -1,8 +1,17 @@
 package others;
 
 import buildings.*;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.annotation.*;
+import com.google.gson.Gson;
 import products.*;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class Manager {
@@ -13,6 +22,11 @@ public class Manager {
     private MilkFactory milkFactory;
     private Mill mill;
     private WeavingFactory weavingFactory;
+    public Authentication authentication = new Authentication();
+     ObjectMapper mapper = new ObjectMapper();
+    private User player ;
+    private String json ;
+    private Gson gson = new Gson();
 
     public Manager() {
         this.farmland = new Farmland();
@@ -24,16 +38,69 @@ public class Manager {
         this.weavingFactory = new WeavingFactory();
     }
 
-    public boolean Login(String command) {
-        return true;
+    public boolean signup(String username , String password)
+    {
+        readGson();
+        User user = new User(username,password);
+        authentication.addUser(user);
+        json = gson.toJson(authentication);
+        if(writeGson(json))
+            return true;
+        if(!login(username))
+            return false;
+        return false;
+    }
+    public boolean writeGson (String json)
+    {
+        try {
+            PrintWriter pw = new PrintWriter("users.json");
+            pw.write(json);
+            pw.flush();
+            pw.close();
+            return true;
+        }catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    public boolean readGson()
+    {
+        try {
+            authentication  = gson.fromJson(new FileReader("users.json"),Authentication.class);
+            return true;
+        }catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
-    public boolean checkUsername(String command) {
-        return true;
+    public boolean login(String username) {
+        if(!readGson())
+            return false;
+        player=authentication.findUser(username);
+        if(player != null)
+            return true;
+        return false;
     }
 
-    public boolean checkPassword(String username , String command) {
-        return true;
+
+
+    public boolean checkUsername(String username) {
+        if(!readGson())
+            return false;
+        if(authentication.checkUsername(username))
+          return true;
+        else
+            return false;
+    }
+
+    public boolean checkPassword(String username , String password) {
+        if(!readGson())
+            return false;
+        if(authentication.checkPassword(username,password))
+            return true;
+        else
+            return false;
     }
 
     public boolean truckGo() {
