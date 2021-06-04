@@ -20,15 +20,7 @@ public class Mill extends ProductiveBuilding {
         super( 150, new Egg());
     }
 
-    @Override
-    public boolean isBuilt() {
-        return super.isBuilt();
-    }
 
-    @Override
-    public void setBuilt(boolean built) {
-        super.setBuilt(built);
-    }
 
     @Override
     public boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland) {

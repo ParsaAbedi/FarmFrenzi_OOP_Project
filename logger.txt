@@ -231,3 +231,9 @@
 [Info],Tue Jun 01 17:06:39 IRDT 2021,Signed up
 	username: Parisa	password: pa
 [Info],Tue Jun 01 17:06:39 IRDT 2021,Submenu number 3 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 04 12:11:07 IRDT 2021,Entered START MENU
+[Info],Fri Jun 04 12:11:07 IRDT 2021,Submenu number 2 selected!
+[Error],Fri Jun 04 12:11:07 IRDT 2021,THIS USERNAME IS NOT AVAILABLE!

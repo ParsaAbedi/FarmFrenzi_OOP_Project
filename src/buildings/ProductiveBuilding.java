@@ -11,23 +11,15 @@ public class ProductiveBuilding extends Buildings{
     private int level;
     private int numOfProductForSingleProduce;
     private int timeLeft;
-    private boolean built;
+
 
     public ProductiveBuilding( int cost,Products neededProducts) {
         super(cost);
         this.neededProducts = neededProducts;
         this.level=1;
-        this.built=false;
+
         this.numOfProductForSingleProduce=1;
         this.timeLeft=-1;
-    }
-
-    public boolean isBuilt() {
-        return built;
-    }
-
-    public void setBuilt(boolean built) {
-        this.built = built;
     }
 
     boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland){

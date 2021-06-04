@@ -21,16 +21,6 @@ public class SewingWorkshop extends ProductiveBuilding{
     }
 
     @Override
-    public boolean isBuilt() {
-        return super.isBuilt();
-    }
-
-    @Override
-    public void setBuilt(boolean built) {
-        super.setBuilt(built);
-    }
-
-    @Override
     public boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland) {
         return super.produce(timeLeft, uniqeProduct, wareHouse, farmland);
     }

@@ -20,15 +20,6 @@ public class MilkFactory extends ProductiveBuilding{
         super(400, new Milk());
     }
 
-    @Override
-    public boolean isBuilt() {
-        return super.isBuilt();
-    }
-
-    @Override
-    public void setBuilt(boolean built) {
-        super.setBuilt(built);
-    }
 
     @Override
     public boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland) {

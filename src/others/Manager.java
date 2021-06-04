@@ -9,6 +9,9 @@ import products.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.regex.Pattern;
 
 public class Manager {
@@ -317,15 +320,17 @@ public class Manager {
         return false;
     }//DONE
 
-
-
     public boolean plant(String s, String s1) {
         //TODO
         return true;
     }
 
     public boolean well() {
-        if (farmland.getWell().drainWell())return true;
+        if (farmland.getWell().drainWell()){
+            Logger.writeInfo("drain from well done");
+            return true;
+        }
+        Logger.writeError("well is not empty");
         return false;
     }//DONE
 
