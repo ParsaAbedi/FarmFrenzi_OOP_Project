@@ -10,6 +10,7 @@ public class LoginMenu extends Menu{
         submenus.put(1,new MainMenu(parentMenu));
         this.setSubmenus(submenus);
     }
+    private String username , password ;
 
     @Override
     public void show() {
@@ -20,7 +21,6 @@ public class LoginMenu extends Menu{
     public void execute() {
         Menu nextMenu ;
         String command;
-        String username = "USER";
         boolean quit = false;
         // RECEIVING USERNAME
         while (!quit)
@@ -37,12 +37,12 @@ public class LoginMenu extends Menu{
                     return;
                 }
                 else if (manager.checkUsername(command)) {
-                    username = command ;
+                    username = new String(command) ;
                     quit = true;
                 }
                 else
                 {
-                    System.err.println("NO USER WITH SUCH USERNAME WAS FOUND!\n");
+                    System.err.println("NO USER WITH SUCH USERNAME WAS FOUND!");
                 }
             }
             else {
@@ -67,17 +67,22 @@ public class LoginMenu extends Menu{
                 }
                 else if (manager.checkPassword(username,command)) {
                     nextMenu = new MainMenu(parentMenu);
+                    password = new String(command);
+                    manager.login(username);
+                    logger.writeInfo("Logged in!\n\t"+manager.authentication.toString());
                     nextMenu.show();
                     nextMenu.execute();
                     quit = true;
                 }
                 else
                 {
-                    System.err.println("PASSWORD IS WRONG!\n");
+                    System.err.println("PASSWORD IS WRONG!");
+                    logger.writeError("PASSWORD IS WRONG!");
                 }
             }
             else {
                 System.err.println("Invalid input!");
+                logger.writeError("Invalid input!");
             }
 
         }

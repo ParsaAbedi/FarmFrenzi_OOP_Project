@@ -21,7 +21,7 @@ public class Logger {
     {
 
         try {
-            Files.write(Paths.get(filePath), ("[Info],"+date.toString()+","+message+"\n").getBytes(), StandardOpenOption.APPEND);
+            Files.write(Paths.get(filePath), ("[Error],"+date.toString()+","+message+"\n").getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
             return false;
@@ -34,6 +34,19 @@ public class Logger {
 
         try {
             Files.write(Paths.get(filePath), ("[Info],"+date.toString()+","+message+"\n").getBytes(), StandardOpenOption.APPEND);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+    public boolean start()
+    {
+        String message = "-" ;
+        for(int i=0 ; i<19 ; i++)
+            message+="-";
+        try {
+            Files.write(Paths.get(filePath), (message+"\n *PROGRAM STARTS* \n"+message+"\n").getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
             return false;
