@@ -43,5 +43,6 @@ public abstract class WildAnimal extends Animal {
             this.cageTimes++;
             return true;
         }
+        return false;
     }
 }
