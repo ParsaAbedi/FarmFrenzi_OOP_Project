@@ -237,3 +237,420 @@
 [Info],Fri Jun 04 12:11:07 IRDT 2021,Entered START MENU
 [Info],Fri Jun 04 12:11:07 IRDT 2021,Submenu number 2 selected!
 [Error],Fri Jun 04 12:11:07 IRDT 2021,THIS USERNAME IS NOT AVAILABLE!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 15:09:16 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 15:09:16 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 15:09:16 IRDT 2021,Logged in!
+	others.Authentication@6eceb130
+[Info],Mon Jun 14 15:09:16 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 15:11:16 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 15:11:16 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 15:11:16 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 15:11:16 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 16:05:24 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 16:05:24 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 16:05:24 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 17:09:08 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 17:09:08 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 17:09:08 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 17:09:08 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 17:09:08 IRDT 2021,truck started its own path
+[Info],Mon Jun 14 17:09:08 IRDT 2021,truck is already on the roads!
+[Info],Mon Jun 14 17:09:08 IRDT 2021,truck is already on the roads!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 17:16:25 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 17:16:25 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 17:16:25 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 17:16:25 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 17:16:25 IRDT 2021,truck started its own path
+[Info],Mon Jun 14 17:16:25 IRDT 2021,truck is already on the roads!
+[Info],Mon Jun 14 17:16:25 IRDT 2021,truck is already on the roads!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 17:16:51 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 17:21:36 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 17:21:36 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 17:21:36 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 17:21:36 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 17:23:08 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 17:24:06 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 17:24:06 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 17:24:06 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 17:24:06 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 17:25:20 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 17:25:20 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 17:25:20 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 17:25:20 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 18:42:51 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 18:42:51 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 18:42:51 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 18:42:51 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 18:44:06 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 18:44:06 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 18:44:06 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 18:44:06 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 18:45:11 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 18:45:11 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 18:45:11 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 18:45:11 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 18:45:11 IRDT 2021,truck started its own path
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:36:35 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:36:35 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:36:35 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:36:35 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:39:45 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:39:45 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:39:45 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:39:45 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:40:50 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:40:50 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:40:50 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:40:50 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:40:50 IRDT 2021,truck started its own path
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:42:56 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:42:56 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:42:56 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:42:56 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:42:56 IRDT 2021,truck started its own path
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:44:12 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:44:12 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:44:12 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:44:12 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:45:04 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:45:04 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:45:04 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:45:04 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:45:48 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:45:48 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:45:48 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:45:48 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:46:43 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:46:43 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:46:43 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:46:43 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:47:56 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:47:56 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:47:56 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:47:56 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:49:02 IRDT 2021,Entered START MENU
+[Error],Mon Jun 14 22:49:02 IRDT 2021,Invalid input in START MENU
+[Info],Mon Jun 14 22:49:02 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:49:02 IRDT 2021,Logged in!
+	others.Authentication@6eceb130
+[Info],Mon Jun 14 22:49:02 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:52:20 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:52:20 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:52:20 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Mon Jun 14 22:52:20 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Mon Jun 14 22:52:43 IRDT 2021,Entered START MENU
+[Info],Mon Jun 14 22:52:43 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:52:43 IRDT 2021,Logged in!
+	others.Authentication@6eceb130
+[Info],Mon Jun 14 22:52:43 IRDT 2021,Submenu number 1 selected!
+[Info],Mon Jun 14 22:52:43 IRDT 2021,truck started its own path
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 09:59:22 IRDT 2021,Entered START MENU
+[Error],Tue Jun 15 09:59:22 IRDT 2021,Invalid input in START MENU
+[Error],Tue Jun 15 09:59:22 IRDT 2021,Invalid input in START MENU
+[Info],Tue Jun 15 09:59:22 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 09:59:22 IRDT 2021,Logged in!
+	others.Authentication@7e0e6aa2
+[Error],Tue Jun 15 09:59:22 IRDT 2021,Invalid input in MAIN MENU
+[Info],Tue Jun 15 09:59:22 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:00:26 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 10:00:26 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:00:26 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Tue Jun 15 10:00:26 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:00:54 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:01:08 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 10:01:08 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:01:08 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Tue Jun 15 10:01:08 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:02:03 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 10:02:03 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:02:03 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Tue Jun 15 10:02:03 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:02:48 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 10:02:48 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:02:48 IRDT 2021,Logged in!
+	others.Authentication@3891771e
+[Info],Tue Jun 15 10:02:48 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:02:48 IRDT 2021,truck started its own path
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:04:48 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 10:04:48 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:04:48 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Tue Jun 15 10:04:48 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:04:48 IRDT 2021,truck started its own path
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:05:34 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 10:05:34 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:05:34 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Tue Jun 15 10:05:34 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:05:34 IRDT 2021,truck started its own path
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:08:31 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 10:08:31 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:08:31 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+[Info],Tue Jun 15 10:08:31 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 10:08:31 IRDT 2021,truck started its own path
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:17:47 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:22:06 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:24:09 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:24:55 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:30:19 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:56:07 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:57:02 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:57:21 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:58:08 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 10:58:27 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 14:39:46 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 14:40:51 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 14:41:11 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 14:41:28 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 15:38:52 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 15:38:52 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 15:38:52 IRDT 2021,Logged in!
+	others.Authentication@64485a47
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 15:42:12 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 15:42:12 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 15:42:12 IRDT 2021,Logged in!
+	others.Authentication@3578436e
+[Info],Tue Jun 15 15:42:12 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 15:42:12 IRDT 2021,Submenu number 1 selected!
+[Error],Tue Jun 15 15:42:12 IRDT 2021,Invalid input!
+[Error],Tue Jun 15 15:42:12 IRDT 2021,Invalid input!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 15:43:19 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 15:43:19 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 15:43:19 IRDT 2021,Logged in!
+	others.Authentication@3578436e
+[Info],Tue Jun 15 15:43:19 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 15:43:19 IRDT 2021,Submenu number 2 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 15:43:46 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 15:43:46 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 15:43:46 IRDT 2021,Logged in!
+	others.Authentication@3578436e
+[Info],Tue Jun 15 15:43:46 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 15:43:46 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 16:32:04 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 16:32:04 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 16:32:04 IRDT 2021,Logged in!
+	others.Authentication@3578436e
+[Info],Tue Jun 15 16:32:04 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 16:32:04 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 16:41:35 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 16:41:35 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 16:41:35 IRDT 2021,Logged in!
+	others.Authentication@3578436e
+[Info],Tue Jun 15 16:41:35 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 16:41:35 IRDT 2021,Submenu number 1 selected!

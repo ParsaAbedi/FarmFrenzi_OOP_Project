@@ -1,20 +1,20 @@
 package others;
 
+import animals.*;
 import buildings.*;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.annotation.*;
 import com.google.gson.Gson;
 import products.*;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Manager {
+    public int missionsNum = 0;
     private Farmland farmland ;
     private SewingWorkshop sewingWorkshop;
     private CookieBakery cookieBakery;
@@ -45,17 +45,17 @@ public class Manager {
 
     public boolean signup(String username , String password)
     {
-        readGson();
+        readGsonUser();
         User user = new User(username,password);
         authentication.addUser(user);
         json = gson.toJson(authentication);
-        if(writeGson(json))
+        if(writeGsonUser(json))
             return true;
         if(!login(username))
             return false;
         return false;
     }
-    public boolean writeGson (String json)
+    public boolean writeGsonUser(String json)
     {
         try {
             PrintWriter pw = new PrintWriter("users.json");
@@ -68,7 +68,7 @@ public class Manager {
             return false;
         }
     }
-    public boolean readGson()
+    public boolean readGsonUser()
     {
         try {
             authentication  = gson.fromJson(new FileReader("users.json"),Authentication.class);
@@ -80,7 +80,7 @@ public class Manager {
     }
 
     public boolean login(String username) {
-        if(!readGson())
+        if(!readGsonUser())
             return false;
         player=authentication.findUser(username);
         if(player != null)
@@ -91,7 +91,7 @@ public class Manager {
 
 
     public boolean checkUsername(String username) {
-        if(!readGson())
+        if(!readGsonUser())
             return false;
         if(authentication.checkUsername(username))
           return true;
@@ -100,7 +100,7 @@ public class Manager {
     }
 
     public boolean checkPassword(String username , String password) {
-        if(!readGson())
+        if(!readGsonUser())
             return false;
         if(authentication.checkPassword(username,password))
             return true;
@@ -341,5 +341,86 @@ public class Manager {
     public boolean buy(String s) {
         //TODO
         return true;
+    }
+    public ArrayList<Mission> loadMissions()
+    {
+        ArrayList<Mission> missions = new ArrayList<>();
+        String filePath = "missions.txt";
+        String text = "";
+        try {
+            File myFile = new File(filePath);
+            Scanner myReader = new Scanner(myFile);
+            while (myReader.hasNextLine())
+                text+=myReader.nextLine();
+
+        } catch (FileNotFoundException e)
+        {
+            e.getStackTrace();
+        }
+        Pattern p = Pattern.compile("[0-9]*");
+        Matcher m = p.matcher(text);
+        if(m.find())
+        missionsNum = Integer.parseInt(m.group(0));
+        p = Pattern.compile("#");
+        m= p.matcher(text);
+        String[] lines = text.split("@");
+        for(int cnt =1 ; cnt < lines.length ; cnt ++)
+        {
+            if(lines[cnt].equals("#"))
+            {
+                cnt++;
+                int missionNumber ;
+                int initialCoins;
+                int maxTime;
+                int price;
+                int wildAnimalNumber;
+                int tasksNumber ;
+                boolean isLocked;
+               ArrayList<WildAnimal> wildAnimals = new ArrayList<>();
+                HashMap<Task,Boolean> tasks = new HashMap<>();
+                missionNumber = Integer.parseInt(lines[cnt]);
+                //System.out.printf("mission number: %d \n", missionNumber);
+                if(lines[cnt+1].equals("1"))
+                    isLocked =true;
+                else
+                    isLocked = false;
+                initialCoins = Integer.parseInt(lines[cnt+2]);
+                maxTime = Integer.parseInt(lines[cnt+3]);
+                price = Integer.parseInt(lines[cnt+4]);
+                wildAnimalNumber = Integer.parseInt(lines[cnt+5]);
+                tasksNumber = Integer.parseInt(lines[cnt+6]);
+                //System.out.printf("isLocked : %b \n initial coins : %d \n maxTime : %d \n prize : %d \nwildAnimalNumber : %d \ntasks number : %d \n",isLocked,initialCoins,maxTime,price,wildAnimalNumber,tasksNumber);
+                int i;
+                for( i=cnt+7 ; i<cnt+7+missionNumber ; i++)
+                {
+                    char ch = lines[i].toCharArray()[0];
+                    switch (ch){
+                        case'T':
+                            wildAnimals.add(new Tiger(Integer.parseInt(lines[++i])));
+                            break;
+                        case 'L':
+                            wildAnimals.add(new Lion(Integer.parseInt(lines[++i])));
+                            break;
+                        case 'B':
+                            wildAnimals.add(new Bear(Integer.parseInt(lines[++i])));
+                            break;
+                    }
+                }
+/*                for(WildAnimal w: wildAnimals)
+                    System.out.println(w.toString());*/
+                for( int j=i ; j<i+tasksNumber ; j+=2)
+                {
+                    boolean bool = true;
+                    if(lines[j+1].equals(0))
+                        bool = false;
+                    tasks.put(new Task(lines[j]),bool);
+                }
+/*                for (HashMap.Entry<Task, Boolean> set : tasks.entrySet()) {
+                    System.out.println(set.getKey().definition + " = " + set.getValue());
+                }*/
+                missions.add(new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price));
+            }
+        }
+        return missions;
     }
 }

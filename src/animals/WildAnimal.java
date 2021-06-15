@@ -6,11 +6,16 @@ public abstract class WildAnimal extends Animal {
     }
     private int sellPrice;
     private int freedom ;
-
+    private int enteranceTime ;
     public WildAnimal(int velocity, int freedom,int sellPrice) {
         super(velocity);
         this.freedom = freedom;
         this.sellPrice=sellPrice;
+    }
+
+
+    public WildAnimal(int enteranceTime) {
+        this.enteranceTime = enteranceTime;
     }
 
     boolean attack (DomesticAnimal domesticAnimal)

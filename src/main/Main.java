@@ -3,6 +3,8 @@ package main;
 import animals.Bear;
 import main.menu.Menu;
 import main.menu.StartMenu;
+import others.Manager;
+
 import java.util.Scanner;
 
 public class Main {

@@ -5,11 +5,12 @@ import java.util.Scanner;
 import java.util.regex.*;
 import others.*;
 public abstract class Menu {
+    protected Mission mission;
     public static Logger logger = new Logger(new User());
     static Manager manager = new Manager();
     protected Menu parentMenu ;
     protected HashMap<Integer , Menu> submenus  ;
-    private String name ;
+    protected String name ;
     public static Scanner scanner ;
 
     public Menu(Menu parentMenu, String name) {
