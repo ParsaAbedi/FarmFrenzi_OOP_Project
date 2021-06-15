@@ -4,7 +4,7 @@ import animals.Animal;
 import buildings.ProductiveBuilding;
 import buildings.Well;
 import products.Products;
-import javax.swing.text.Position;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -43,6 +43,10 @@ public class Farmland {
 
     public HashMap<FarmPosition, Integer> getFarmLandPlant() {
         return farmLandPlant;
+    }
+
+    public Farmland() {
+        this.well = new Well();
     }
 
     public int giveTheNumberOfPlants(FarmPosition farmPosition) {

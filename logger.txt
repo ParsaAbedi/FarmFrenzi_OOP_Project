@@ -237,3 +237,58 @@
 [Info],Fri Jun 04 12:11:07 IRDT 2021,Entered START MENU
 [Info],Fri Jun 04 12:11:07 IRDT 2021,Submenu number 2 selected!
 [Error],Fri Jun 04 12:11:07 IRDT 2021,THIS USERNAME IS NOT AVAILABLE!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 17:03:01 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 17:03:01 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 17:03:01 IRDT 2021,Logged in!
+	others.Authentication@2eda0940
+[Info],Tue Jun 15 17:03:01 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 17:03:01 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Entered START MENU
+[Error],Tue Jun 15 17:06:49 IRDT 2021,Invalid input in START MENU
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Logged in!
+	others.Authentication@706a04ae
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Submenu number 1 selected!
+[Error],Tue Jun 15 17:06:49 IRDT 2021,well is not empty
+[Error],Tue Jun 15 17:06:49 IRDT 2021,Task Failed!
+
+[Info],Tue Jun 15 17:06:49 IRDT 2021,planted
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:06:49 IRDT 2021,planted
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:06:49 IRDT 2021,planted
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:06:49 IRDT 2021,planted
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:06:49 IRDT 2021,planted
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Task Done!
+
+[Error],Tue Jun 15 17:06:49 IRDT 2021,well does not have water
+[Error],Tue Jun 15 17:06:49 IRDT 2021,Task Failed!
+
+[Info],Tue Jun 15 17:06:49 IRDT 2021,drain from well done
+[Info],Tue Jun 15 17:06:49 IRDT 2021,Task Done!
+
