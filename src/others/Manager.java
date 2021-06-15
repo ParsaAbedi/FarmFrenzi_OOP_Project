@@ -55,11 +55,11 @@ public class Manager {
 
     public boolean signup(String username , String password)
     {
-        readGson();
+        readGsonUser();
         User user = new User(username,password);
         authentication.addUser(user);
         json = gson.toJson(authentication);
-        if(writeGson(json))
+        if(writeGsonUser(json))
             return true;
         if(!login(username))
             return false;
