@@ -1,10 +1,16 @@
 package main.menu;
+import animals.Bear;
+import animals.WildAnimal;
 import others.Logger;
 import others.Manager;
+import others.Mission;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.regex.Pattern;
 
 public class InputProcessor extends Menu{
+    static int n = 1;
     public  InputProcessor(Menu parent ){
         super(parent , "START");
     }
@@ -13,7 +19,7 @@ public class InputProcessor extends Menu{
         //TODO
         System.out.printf("HERE IS YOUR FARM DUDE!\n");
     }
-
+    ArrayList<Mission> missions = new ArrayList<>();
     @Override
     public void execute() {
         String command;
@@ -110,6 +116,11 @@ public class InputProcessor extends Menu{
 
     private void truckGo() {
         //TODO
+        missions= new ArrayList<>(manager.loadMissions());
+        for(Mission i :missions)
+        {
+            System.out.printf(i.toString());
+        }
         if(manager.truckGo())
         {
             done();
@@ -119,6 +130,7 @@ public class InputProcessor extends Menu{
     }
 
     private void unloadTruck(String[] split) {
+
         if(manager.unloadTruck(split[2]))
         {
             done();
@@ -156,7 +168,7 @@ public class InputProcessor extends Menu{
     }
 
     private void cage(String[] split) {
-
+        //TODO
         if(manager.cage(split[1], split[2]))
         {
             done();
@@ -176,6 +188,7 @@ public class InputProcessor extends Menu{
     }
 
     private void plant(String[] split) {
+        //TODO
         if(manager.plant(split[1], split[2]))
         {
             done();
@@ -194,7 +207,7 @@ public class InputProcessor extends Menu{
     }
 
     private void pickup(String[] split) {
-
+        //TODO
         if(manager.pickup(split[1], split[2]))
         {
             done();

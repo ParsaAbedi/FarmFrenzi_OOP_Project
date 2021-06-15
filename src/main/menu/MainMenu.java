@@ -7,7 +7,7 @@ public class MainMenu extends Menu{
 
         super(parentMenu,"MAIN MENU");
         HashMap <Integer , Menu> submenus = new HashMap<>();
-        submenus.put(1, new InputProcessor(this));
+        submenus.put(1, new Map(this));
         submenus.put(2,parentMenu);
         submenus.put(3,new SettingMenu(this));
         super.setSubmenus(submenus);

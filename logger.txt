@@ -237,11 +237,3 @@
 [Info],Fri Jun 04 12:11:07 IRDT 2021,Entered START MENU
 [Info],Fri Jun 04 12:11:07 IRDT 2021,Submenu number 2 selected!
 [Error],Fri Jun 04 12:11:07 IRDT 2021,THIS USERNAME IS NOT AVAILABLE!
---------------------
- *PROGRAM STARTS* 
---------------------
-[Info],Mon Jun 14 10:46:20 IRDT 2021,Entered START MENU
-[Info],Mon Jun 14 10:46:20 IRDT 2021,Submenu number 1 selected!
-[Info],Mon Jun 14 10:46:20 IRDT 2021,Logged in!
-	others.Authentication@150c158
-[Info],Mon Jun 14 10:46:20 IRDT 2021,Submenu number 1 selected!

@@ -53,6 +53,10 @@ public abstract class Animal {
         farmPosition.setRandomY();
         return true;
     }
+
+    public Animal() {
+    }
+
     public boolean setRandomMoveDirections(){
         int randomNum = random.nextInt(4);
         if(farmPosition.getY()==ROWS-1 && randomNum==directions.DOWN.ordinal())
