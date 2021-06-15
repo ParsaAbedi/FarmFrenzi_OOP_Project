@@ -1,9 +1,10 @@
 package products;
 
+import animals.Type;
 import buildings.Capacity;
 
 public class Clothes extends Products{
     public Clothes() {
-        super(100, Capacity.MAIN);
+        super(100, Capacity.MAIN, Type.CLOTHES);
     }
 }

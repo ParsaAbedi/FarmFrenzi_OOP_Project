@@ -11,13 +11,18 @@ public abstract class Animal {
     protected int  lives , velocity ;
     private directions moveDirection;
     private Random random = new Random();
+    private Type type;
 
+    public Type getType() {
+        return type;
+    }
 
-    public Animal(int velocity) {
+    public Animal(int velocity , Type type) {
         setInitialPosition();
         this.lives = MAX_LIVES;
         this.velocity = velocity;
         setRandomMoveDirections();
+        this.type=type;
     }
 
     public boolean move ()
@@ -65,5 +70,7 @@ public abstract class Animal {
         }
         return true;
     }
-
+    public int getSellPrice() {
+        return this.getSellPrice();
+    }
 }

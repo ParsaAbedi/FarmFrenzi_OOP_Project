@@ -1,11 +1,9 @@
 package buildings;
 
+import animals.Type;
+import others.FarmPosition;
 import others.Farmland;
-import products.IceCream;
-import products.PastorizedMilk;
 import products.Products;
-
-import java.util.ArrayList;
 
 public class IceCreamShop extends ProductiveBuilding{
     private static IceCreamShop ourInstance;
@@ -17,14 +15,26 @@ public class IceCreamShop extends ProductiveBuilding{
         return ourInstance;
     }
     public IceCreamShop() {
-        super(550,new PastorizedMilk());
+        super(550, Type.PASTORIZEDMILK,Type.ICECREAM,7);
     }
 
     @Override
-    public boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland) {
-        return super.produce(timeLeft, uniqeProduct, wareHouse, farmland);
+    public boolean initiateProduce(int timeLeft, WareHouse wareHouse) {
+        return super.initiateProduce(timeLeft,wareHouse);
+    }
+    public void letsProduce(Farmland farmland, FarmPosition farmPosition) {
+        super.letsProduce(farmland, farmPosition);
     }
 
+    @Override
+    public boolean turner() {
+        return super.turner();
+    }
+
+    @Override
+    public Products giveMeANewOne(Type type) {
+        return super.giveMeANewOne(type);
+    }
 
     @Override
     public boolean upgrade() {

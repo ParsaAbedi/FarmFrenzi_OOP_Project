@@ -32,6 +32,10 @@ public class WareHouse extends Buildings{
         return capacity;
     }
 
+    public boolean canAdd(Products products){
+        if (capacity+products.getCapacity()<=30) return true;
+        return false;
+    }
     public static void setCapacity(int capacity) {
         WareHouse.capacity = capacity;
     }

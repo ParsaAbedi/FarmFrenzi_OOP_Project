@@ -1,11 +1,9 @@
 package buildings;
 
+import animals.Type;
+import others.FarmPosition;
 import others.Farmland;
-import products.Egg;
-import products.Flour;
 import products.Products;
-
-import java.util.ArrayList;
 
 public class Mill extends ProductiveBuilding {
     private static Mill ourInstance;
@@ -17,14 +15,26 @@ public class Mill extends ProductiveBuilding {
         return ourInstance;
     }
     public Mill() {
-        super( 150, new Egg());
+        super( 150, Type.EGG,Type.FLOUR,4);
+    }
+    public void letsProduce(Farmland farmland, FarmPosition farmPosition) {
+        super.letsProduce(farmland, farmPosition);
+    }
+
+    @Override
+    public boolean turner() {
+        return super.turner();
+    }
+
+    @Override
+    public Products giveMeANewOne(Type type) {
+        return super.giveMeANewOne(type);
     }
 
 
-
     @Override
-    public boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland) {
-        return super.produce(timeLeft, uniqeProduct, wareHouse, farmland);
+    public boolean initiateProduce(int timeLeft, WareHouse wareHouse) {
+        return super.initiateProduce(timeLeft, wareHouse);
     }
 
 

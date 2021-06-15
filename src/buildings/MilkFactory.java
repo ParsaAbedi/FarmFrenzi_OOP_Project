@@ -1,11 +1,9 @@
 package buildings;
 
+import animals.Type;
+import others.FarmPosition;
 import others.Farmland;
-import products.Milk;
-import products.PastorizedMilk;
 import products.Products;
-
-import java.util.ArrayList;
 
 public class MilkFactory extends ProductiveBuilding{
     private static MilkFactory ourInstance;
@@ -17,13 +15,25 @@ public class MilkFactory extends ProductiveBuilding{
         return ourInstance;
     }
     public MilkFactory() {
-        super(400, new Milk());
+        super(400, Type.MILK,Type.PASTORIZEDMILK,6);
     }
 
+    public void letsProduce(Farmland farmland, FarmPosition farmPosition) {
+        super.letsProduce(farmland, farmPosition);
+    }
 
     @Override
-    public boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland) {
-        return super.produce(timeLeft, uniqeProduct, wareHouse, farmland);
+    public boolean turner() {
+        return super.turner();
+    }
+
+    @Override
+    public Products giveMeANewOne(Type type) {
+        return super.giveMeANewOne(type);
+    }
+    @Override
+    public boolean initiateProduce(int timeLeft, WareHouse wareHouse) {
+        return super.initiateProduce(timeLeft, wareHouse);
     }
 
     @Override

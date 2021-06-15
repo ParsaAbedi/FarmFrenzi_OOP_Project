@@ -6,6 +6,14 @@ public class FarmPosition {
     public static final int COLUMNS = 6;
     public static final int ROWS =6 ;
 
+    public FarmPosition() {
+    }
+
+    public FarmPosition(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public void setX(int x) {
         this.x = x;
     }

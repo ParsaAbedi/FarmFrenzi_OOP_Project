@@ -6,20 +6,37 @@ public abstract class WildAnimal extends Animal {
     }
     private int sellPrice;
     private int freedom ;
+    private int cageTimes;
 
-    public WildAnimal(int velocity, int freedom,int sellPrice) {
-        super(velocity);
+    public WildAnimal(int velocity, int freedom, int sellPrice, int cageTimes) {
+        super(velocity,Type.WILD);
         this.freedom = freedom;
         this.sellPrice=sellPrice;
+        this.cageTimes=cageTimes;
+    }
+
+    public int getCageTimes() {
+        return cageTimes;
+    }
+
+    public int getSellPrice() {
+        return sellPrice;
     }
 
     boolean attack (DomesticAnimal domesticAnimal)
     {
         return false;
     }
-    boolean buildCage ()
-    {
-        //TODO
+    public boolean caged(){
+        if (this.cageTimes>=this.getFreedom())
+            return true;
+        return false;
+    }
+    public boolean addCage(){
+        if (cageTimes<freedom){
+            this.cageTimes++;
+            return true;
+        }
         return false;
     }
 }

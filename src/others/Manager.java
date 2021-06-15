@@ -1,20 +1,23 @@
 package others;
 
+import animals.Animal;
+import animals.DomesticAnimal;
+import animals.Type;
+import animals.WildAnimal;
 import buildings.*;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.annotation.*;
 import com.google.gson.Gson;
 import products.*;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Map;
+import java.util.Random;
 import java.util.regex.Pattern;
 
 public class Manager {
+    private Random random = new Random();
     private Farmland farmland ;
     private SewingWorkshop sewingWorkshop;
     private CookieBakery cookieBakery;
@@ -54,7 +57,7 @@ public class Manager {
         if(!login(username))
             return false;
         return false;
-    }
+    }//DONE
     public boolean writeGson (String json)
     {
         try {
@@ -67,7 +70,7 @@ public class Manager {
             e.printStackTrace();
             return false;
         }
-    }
+    }//DONE
     public boolean readGson()
     {
         try {
@@ -77,7 +80,7 @@ public class Manager {
             e.printStackTrace();
             return false;
         }
-    }
+    }//DONE
 
     public boolean login(String username) {
         if(!readGson())
@@ -86,7 +89,7 @@ public class Manager {
         if(player != null)
             return true;
         return false;
-    }
+    }//DONE
 
 
 
@@ -97,7 +100,7 @@ public class Manager {
           return true;
         else
             return false;
-    }
+    }//DONE
 
     public boolean checkPassword(String username , String password) {
         if(!readGson())
@@ -106,7 +109,7 @@ public class Manager {
             return true;
         else
             return false;
-    }
+    }//DONE
 
     public boolean truckGo() {
         if (!truck.isOnTheMove()){
@@ -169,57 +172,154 @@ public class Manager {
         return false;
     }//DONE
 
-    public boolean turn(String s) {
-        //TODO
-        return true;
-    }
+    public boolean turn(String num) {
+        for (int i = 0; i < Integer.parseInt(num); i++) {
 
-    public boolean cage(String s, String s1) {
-        //TODO
+            for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
+                if (entry.getValue().getType()==Type.DOMESTIC){
+                    if (((DomesticAnimal)entry.getValue()).itIsTheTime()){
+                        switch (((DomesticAnimal)entry.getValue()).getKind()){
+                            case OSTRICH:
+                                farmland.getFarmLandProduct().put(positionMaker(-1,-1),new Feather());
+                                System.out.println("a feather produced");
+                                Logger.writeInfo("a feather produced");
+                                break;
+                            case BUFFALO:
+                                farmland.getFarmLandProduct().put(positionMaker(-1,-1),new Milk());
+                                System.out.println("a milk produced");
+                                Logger.writeInfo("a milk produced");
+                                break;
+                            case HEN:
+                                farmland.getFarmLandProduct().put(positionMaker(-1,-1),new Egg());
+                                System.out.println("a egg produced");
+                                Logger.writeInfo("a egg produced");
+                                break;
+                        }
+                    }
+                }
+            }
+            for (Map.Entry<FarmPosition, Products> entry : farmland.getFarmLandProduct().entrySet()) {
+                    if (entry.getValue().timeChecker()){
+                        farmland.getFarmLandProduct().remove(entry.getValue());
+                        System.out.println("a product is gone");
+                        Logger.writeInfo("a product is gone");
+                    }
+            }
+            if (farmland.getBuildings().contains(sewingWorkshop)){
+                if (sewingWorkshop.turner()){
+                    sewingWorkshop.letsProduce(farmland,positionMaker(-1,-1));
+                    System.out.println("your product are on the farm land");
+                    Logger.writeInfo("your product are on the farm land");
+                }
+            }
+            if (farmland.getBuildings().contains(cookieBakery)){
+                if (cookieBakery.turner()){
+                    cookieBakery.letsProduce(farmland,positionMaker(-1,-1));
+                    System.out.println("your product are on the farm land");
+                    Logger.writeInfo("your product are on the farm land");
+                }
+            }
+            if (farmland.getBuildings().contains(iceCreamShop)){
+                if (iceCreamShop.turner()){
+                    iceCreamShop.letsProduce(farmland,positionMaker(-1,-1));
+                    System.out.println("your product are on the farm land");
+                    Logger.writeInfo("your product are on the farm land");
+                }
+            }
+            if (farmland.getBuildings().contains(milkFactory)){
+                if (milkFactory.turner()){
+                    milkFactory.letsProduce(farmland,positionMaker(-1,-1));
+                    System.out.println("your product are on the farm land");
+                    Logger.writeInfo("your product are on the farm land");
+                }
+
+            }
+            if (farmland.getBuildings().contains(mill)){
+                if (mill.turner()){
+                    mill.letsProduce(farmland,positionMaker(-1,-1));
+                    System.out.println("your product are on the farm land");
+                    Logger.writeInfo("your product are on the farm land");
+                }
+
+            }
+            if (farmland.getBuildings().contains(weavingFactory)){
+                if (weavingFactory.turner()){
+                    weavingFactory.letsProduce(farmland,positionMaker(-1,-1));
+                    System.out.println("your product are on the farm land");
+                    Logger.writeInfo("your product are on the farm land");
+                }
+
+            }
+
+
+        }
         return true;
-    }
+    }//KIND OF
+
+    public boolean cage(String x, String y) {
+        for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
+            if (entry.getKey().getX()==Integer.parseInt(x) &&entry.getKey().getY()==Integer.parseInt(y)){
+             if (entry.getValue().getType()== Type.WILD ){
+                 if (((WildAnimal)entry.getValue()).addCage() && ((WildAnimal)entry.getValue()).caged()){
+                   farmland.getFarmLandAnimal().remove(entry.getKey(),entry.getValue());
+                     System.out.println("it is trapped");
+                     Logger.writeInfo("it is trapped");
+                     return true;
+                 }
+                 else if (((WildAnimal)entry.getValue()).addCage()){
+                     System.out.println("Caged installed successfully");
+                     Logger.writeInfo("Caged installed successfully");
+                     return true;
+                 }
+             }
+            }
+        }
+        System.err.println("there is not a wild one in this place");
+        Logger.writeError("there is not a wild one in this place");
+        return false;
+    }//DONE
 
     public boolean work(String workShopName) {
         workShopName = workShopName.trim();
         workShopName= workShopName.toLowerCase();
         if (Pattern.matches("^cookie\\s*bakery$" , workShopName)
                 && farmland.getBuildings().contains(cookieBakery)){
-            if (this.cookieBakery.produce(5,new Bread(),wareHouse,farmland)){
+            if (this.cookieBakery.initiateProduce(5,wareHouse)){
                 Logger.writeInfo("cookie bakery is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^icecream\\s*shop$" , workShopName)&&
                 farmland.getBuildings().contains(iceCreamShop)){
-            if (this.iceCreamShop.produce(7,new IceCream(),wareHouse,farmland)){
+            if (this.iceCreamShop.initiateProduce(7,wareHouse)){
                 Logger.writeInfo("ice cream shop is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^milk\\s*factory$" , workShopName)&&
                 farmland.getBuildings().contains(milkFactory)){
-            if (this.milkFactory.produce(6,new PastorizedMilk(),wareHouse,farmland)){
+            if (this.milkFactory.initiateProduce(6,wareHouse)){
                 Logger.writeInfo("milk factory is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^mill$" , workShopName)&&
                 farmland.getBuildings().contains(mill)){
-            if (this.mill.produce(4,new Flour(),wareHouse,farmland)){
+            if (this.mill.initiateProduce(4,wareHouse)){
                 Logger.writeInfo("mill is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^sewing\\s*workshop$" , workShopName) &&
                 farmland.getBuildings().contains(sewingWorkshop)){
-            if (this.sewingWorkshop.produce(6,new Clothes(),wareHouse,farmland)){
+            if (this.sewingWorkshop.initiateProduce(6,wareHouse)){
                 Logger.writeInfo("sewing workshop is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^weaving\\s*factory$" , workShopName)&&
                 farmland.getBuildings().contains(weavingFactory)){
-            if (this.weavingFactory.produce(5,new Piece(),wareHouse,farmland)){
+            if (this.weavingFactory.initiateProduce(5,wareHouse)){
                 Logger.writeInfo("weaving factory is initilized");
                 return true;
             }
@@ -320,10 +420,19 @@ public class Manager {
         return false;
     }//DONE
 
-    public boolean plant(String s, String s1) {
-        //TODO
-        return true;
-    }
+    public boolean plant(String x, String y) {
+        if (farmland.getWell().waterPlants()){
+            int num = farmland.giveTheNumberOfPlants(positionMaker(Integer.parseInt(x),Integer.parseInt(y)));
+            farmland.getFarmLandPlant().remove(positionMaker(Integer.parseInt(x),Integer.parseInt(y)),num);
+            farmland.getFarmLandPlant().put(positionMaker(Integer.parseInt(x),Integer.parseInt(y)), num+1);
+            System.out.println("planted");
+            Logger.writeInfo("planted");
+            return true;
+        }
+        System.err.println("well does not have water");
+        Logger.writeError("well does not have water");
+        return false;
+    }//DONE
 
     public boolean well() {
         if (farmland.getWell().drainWell()){
@@ -334,12 +443,60 @@ public class Manager {
         return false;
     }//DONE
 
-    public boolean pickup(String s, String s1) {
+    public boolean pickup(String x, String y) {
+        for (Map.Entry<FarmPosition, Products> entry : farmland.getFarmLandProduct().entrySet()) {
+            if (entry.getKey().equals(positionMaker(Integer.parseInt(x), Integer.parseInt(y)))) {
+                if (!entry.getValue().equals(null)) {
+                    if (wareHouse.canAdd(entry.getValue())) {
+                        wareHouse.getStoredProducts().add(entry.getValue());
+                        farmland.getFarmLandProduct().remove(entry.getKey(), entry.getValue());
+                        System.out.println("picked");
+                        Logger.writeInfo("picked");
+                        return true;
+                    }
+                    else {
+                        System.err.println("warehouse does not have capacity");
+                        Logger.writeError("warehouse does not have capacity");
+                        return false;
+                    }
+                }
+                else {
+                    System.err.println("there is no product here");
+                    Logger.writeError("there is no product here");
+                    return false;
+                }
+            }
+        }
         return false;
-    }
+    }//DONE
 
-    public boolean buy(String s) {
-        //TODO
+    public boolean buy(String name) {
+        name=name.toLowerCase();
+        switch (name){
+            case "cat":
+            
+                break;
+            case "hound":
+
+                break;
+            case "hen":
+
+                break;
+            case "buffalo":
+
+                break;
+            case "ostrich":
+
+                break;
+        }
         return true;
     }
+
+    private FarmPosition positionMaker(int x,int y){
+        if (x!=-1)return new FarmPosition(x,y);
+        else return new FarmPosition(random.nextInt(6),random.nextInt(6));
+    }
+
+
+
 }

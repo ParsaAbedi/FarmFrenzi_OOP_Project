@@ -1,11 +1,9 @@
 package buildings;
 
+import animals.Type;
+import others.FarmPosition;
 import others.Farmland;
-import products.Feather;
-import products.Piece;
 import products.Products;
-
-import java.util.ArrayList;
 
 public class WeavingFactory extends ProductiveBuilding {
     private static WeavingFactory ourInstance;
@@ -17,13 +15,25 @@ public class WeavingFactory extends ProductiveBuilding {
         return ourInstance;
     }
     public WeavingFactory() {
-        super(250, new Feather());
+        super(250, Type.FEATHER , Type.PIECE,5);
     }
 
+    public void letsProduce(Farmland farmland, FarmPosition farmPosition) {
+        super.letsProduce(farmland, farmPosition);
+    }
 
     @Override
-    public boolean produce(int timeLeft, Products uniqeProduct, WareHouse wareHouse, Farmland farmland) {
-        return super.produce(timeLeft, uniqeProduct, wareHouse, farmland);
+    public boolean turner() {
+        return super.turner();
+    }
+
+    @Override
+    public Products giveMeANewOne(Type type) {
+        return super.giveMeANewOne(type);
+    }
+    @Override
+    public boolean initiateProduce(int timeLeft, WareHouse wareHouse) {
+        return super.initiateProduce(timeLeft,wareHouse);
     }
 
     @Override

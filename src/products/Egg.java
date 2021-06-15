@@ -1,9 +1,10 @@
 package products;
 
+import animals.Type;
 import buildings.Capacity;
 
 public class Egg extends Products{
     public Egg() {
-        super(15, Capacity.PRIMERY);
+        super(15, Capacity.PRIMERY, Type.EGG);
     }
 }

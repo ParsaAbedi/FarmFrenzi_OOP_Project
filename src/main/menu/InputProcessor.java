@@ -1,4 +1,5 @@
 package main.menu;
+import others.Logger;
 import others.Manager;
 
 import java.util.regex.Pattern;
@@ -136,10 +137,12 @@ public class InputProcessor extends Menu{
 
     private void done(){
         System.out.printf("COMPLETED!\n");
+        Logger.writeInfo("Task Done!\n");
     }
 
     private void error(){
         System.err.printf("TASK FAILED!\n");
+        Logger.writeError("Task Failed!\n");
     }
 
     private void turn(String[] split) {
@@ -153,7 +156,7 @@ public class InputProcessor extends Menu{
     }
 
     private void cage(String[] split) {
-        //TODO
+
         if(manager.cage(split[1], split[2]))
         {
             done();
@@ -173,7 +176,6 @@ public class InputProcessor extends Menu{
     }
 
     private void plant(String[] split) {
-        //TODO
         if(manager.plant(split[1], split[2]))
         {
             done();
@@ -192,7 +194,7 @@ public class InputProcessor extends Menu{
     }
 
     private void pickup(String[] split) {
-        //TODO
+
         if(manager.pickup(split[1], split[2]))
         {
             done();
