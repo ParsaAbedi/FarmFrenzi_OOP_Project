@@ -3,7 +3,7 @@ package animals;
 import animals.DomesticAnimal;
 
 public class Buffalo extends DomesticAnimal {
-    public Buffalo( int price, int timeToCreateProduct) {
+    public Buffalo( ) {
         super(400 , 5,Type.BUFFALO);
     }
 

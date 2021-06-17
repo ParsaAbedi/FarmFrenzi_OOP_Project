@@ -1274,4 +1274,1407 @@ Task type = Coin
 --------------------
  *PROGRAM STARTS* 
 --------------------
-[Info],Thu Jun 17 11:58:16 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:07:35 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:07:35 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:07:35 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:07:35 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:07:35 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 12:07:35 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:07:35 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:07:35 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 12:07:35 IRDT 2021,hen bought!
+[Info],Thu Jun 17 12:07:35 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:13:22 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:13:22 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:13:22 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:13:22 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:13:22 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Invalid input!
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:13:22 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:13:22 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:13:22 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:15:23 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:15:23 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:15:23 IRDT 2021,Logged in!
+	others.Authentication@3578436e
+[Info],Thu Jun 17 12:15:23 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:15:23 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:16:20 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:16:20 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:16:20 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:16:20 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:16:20 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 12:16:20 IRDT 2021,Invalid input!
+[Info],Thu Jun 17 12:16:20 IRDT 2021,hen bought!
+[Info],Thu Jun 17 12:16:20 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:18:48 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:18:48 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:18:48 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:18:48 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:18:48 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:18:48 IRDT 2021,hen bought!
+[Info],Thu Jun 17 12:18:48 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:19:54 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:19:54 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:19:54 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:19:54 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:19:54 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 12:19:54 IRDT 2021,Invalid input!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:34:51 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:34:51 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:34:51 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:34:51 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:34:51 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 12:34:51 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:34:51 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:34:51 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:36:20 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:36:20 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:36:20 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:36:20 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:36:20 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 12:36:20 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:36:20 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:36:20 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 12:36:20 IRDT 2021,hen bought!
+[Info],Thu Jun 17 12:36:20 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 12:36:20 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:36:20 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:36:20 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:39:09 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:39:09 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:39:09 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:39:09 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:39:09 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 12:39:09 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:39:09 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:39:09 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 12:39:09 IRDT 2021,hen bought!
+[Info],Thu Jun 17 12:39:09 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 12:39:09 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:39:09 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:39:09 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:42:15 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:42:15 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:42:15 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:42:15 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:42:15 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 12:42:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 12:42:15 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 12:42:15 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 12:42:15 IRDT 2021,hen bought!
+[Info],Thu Jun 17 12:42:15 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:44:47 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 12:44:47 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 12:44:47 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 12:44:47 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:44:47 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 12:44:47 IRDT 2021,hen bought!
+[Info],Thu Jun 17 12:44:47 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:20:06 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 15:20:06 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:20:06 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 15:20:06 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:20:06 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 15:20:06 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:20:06 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:21:42 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 15:21:42 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:21:42 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 15:21:42 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:21:42 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:21:42 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 15:21:42 IRDT 2021,hen bought!
+[Info],Thu Jun 17 15:21:42 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:21:42 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:21:42 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:21:42 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task Failed!
+
+[Error],Thu Jun 17 15:21:42 IRDT 2021,Task Failed!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:35:53 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 15:35:53 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:35:53 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 15:35:53 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:35:53 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:35:53 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 15:35:53 IRDT 2021,hen bought!
+[Info],Thu Jun 17 15:35:53 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:35:53 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:35:53 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:35:53 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task Failed!
+
+[Error],Thu Jun 17 15:35:53 IRDT 2021,Task Failed!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:38:16 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 15:38:16 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:38:16 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 15:38:16 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:38:16 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:38:16 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 15:38:16 IRDT 2021,hen bought!
+[Info],Thu Jun 17 15:38:16 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:38:16 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:38:16 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:38:16 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:38:16 IRDT 2021,warehouse does not have capacity
+[Error],Thu Jun 17 15:38:16 IRDT 2021,Task Failed!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:39:34 IRDT 2021,hen bought!
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:39:34 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:39:34 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:39:34 IRDT 2021,Invalid input!
+[Info],Thu Jun 17 15:39:34 IRDT 2021,picked
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 15:39:34 IRDT 2021,picked
+[Info],Thu Jun 17 15:39:34 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Entered START MENU
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Invalid input in START MENU
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:47:03 IRDT 2021,hen bought!
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,picked
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,picked
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,mill built
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,mill is initilized
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,a egg produced
+[Info],Thu Jun 17 15:47:03 IRDT 2021,your product are on the farm land
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,a product is gone
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:47:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:47:03 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:52:20 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 15:52:20 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 15:52:20 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 15:52:20 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:52:20 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 15:52:20 IRDT 2021,hen bought!
+[Info],Thu Jun 17 15:52:20 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 15:52:20 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:52:20 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:52:20 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:52:20 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:52:20 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:52:20 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:52:20 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:52:20 IRDT 2021,a egg produced
+[Error],Thu Jun 17 15:52:20 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 15:52:20 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 15:52:20 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 16:00:30 IRDT 2021,Entered START MENU
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Invalid input in START MENU
+[Info],Thu Jun 17 16:00:30 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 16:00:30 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 16:00:30 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 16:00:30 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 16:00:30 IRDT 2021,hen bought!
+[Info],Thu Jun 17 16:00:30 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:00:30 IRDT 2021,a egg produced
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:00:30 IRDT 2021,a egg produced
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:00:30 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:00:30 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 16:02:12 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 16:02:12 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 16:02:12 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 16:02:12 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 16:02:12 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 16:02:12 IRDT 2021,hen bought!
+[Info],Thu Jun 17 16:02:12 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:02:12 IRDT 2021,a egg produced
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:02:12 IRDT 2021,a egg produced
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:02:12 IRDT 2021,Task Done!
+
+[Info],Thu Jun 17 16:02:12 IRDT 2021,a product is gone
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:02:12 IRDT 2021,a egg produced
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:02:12 IRDT 2021,a product is gone
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:02:12 IRDT 2021,a egg produced
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:02:12 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:02:12 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 16:05:58 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 16:05:58 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 16:05:58 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 16:05:58 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 16:05:58 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 16:05:58 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:05:58 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:05:58 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 16:05:58 IRDT 2021,there is not a wild one in this place
+[Error],Thu Jun 17 16:05:58 IRDT 2021,Task Failed!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 16:09:34 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 16:09:34 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 16:09:34 IRDT 2021,Logged in!
+	others.Authentication@704921a5
+[Info],Thu Jun 17 16:09:34 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 16:09:34 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 16:09:34 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 250
+Task type = Coin
+ is NOT completed!
+
+[Error],Thu Jun 17 16:09:34 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 16:09:34 IRDT 2021,Task Done!
+
+[Error],Thu Jun 17 16:09:34 IRDT 2021,there is not a wild one in this place
+[Error],Thu Jun 17 16:09:34 IRDT 2021,Task Failed!
+

@@ -21,7 +21,7 @@ public class WareHouse extends Buildings{
 
     public WareHouse() {
         super(0);
-        capacity=30;
+        capacity=0;
         storedProducts=new ArrayList<>();
         this.wildAnimals=new ArrayList<>();
     }

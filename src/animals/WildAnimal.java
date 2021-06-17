@@ -43,8 +43,10 @@ public abstract class WildAnimal extends Animal {
     }
 
     public boolean caged(){
-        if (this.cageTimes>=this.getFreedom())
+        if (this.cageTimes>=this.getFreedom()){
+            this.cageTimes=0;
             return true;
+        }
         return false;
     }
 

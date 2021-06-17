@@ -16,10 +16,20 @@ public class Farmland {
     private ArrayList<Products> products;
     private Well well;
     /*    private Shop shop;*/
-    private HashMap<FarmPosition, Animal> farmLandAnimal = new HashMap<>();
-    private HashMap<FarmPosition, Products> farmLandProduct = new HashMap<>();
-    private HashMap<FarmPosition, Integer> farmLandPlant = new HashMap<>();
+    private HashMap<FarmPosition, Animal> farmLandAnimal ;
+    private HashMap<FarmPosition, Products> farmLandProduct;
+    private HashMap<FarmPosition, Integer> farmLandPlant;
 
+
+    public Farmland() {
+        this.animals = new ArrayList<>();
+        this.buildings = new ArrayList<>();
+        this.products = new ArrayList<>();
+        this.well = Well.getInstance();
+        this.farmLandAnimal = new HashMap<>() ;
+        this.farmLandProduct = new HashMap<>();
+        this.farmLandPlant= new HashMap<>();
+    }
 
     public ArrayList<ProductiveBuilding> getBuildings() {
         return buildings;
@@ -45,9 +55,6 @@ public class Farmland {
         return farmLandPlant;
     }
 
-    public Farmland() {
-        this.well = Well.getInstance();
-    }
 
     public int giveTheNumberOfPlants(FarmPosition farmPosition) {
         for (Map.Entry<FarmPosition, Integer> entry : farmLandPlant.entrySet()) {
