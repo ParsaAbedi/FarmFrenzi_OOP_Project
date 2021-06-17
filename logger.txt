@@ -1268,3 +1268,10 @@ Task type = Coin
 
 [Info],Thu Jun 17 11:51:34 IRDT 2021,Task Done!
 
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 11:58:16 IRDT 2021,Entered START MENU
