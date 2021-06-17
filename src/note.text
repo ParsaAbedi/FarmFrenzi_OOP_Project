@@ -1,0 +1,15 @@
+number of missions
+    mission number
+    is locked
+    initial coins
+    max time
+    price
+    wild animal number
+    tasks number
+        wild animal type
+        enterance time
+    ---------
+        task definition
+        task value
+        task type
+    ---------
