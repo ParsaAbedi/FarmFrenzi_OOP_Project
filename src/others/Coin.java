@@ -2,27 +2,27 @@ package others;
 
 public class Coin {
     public final static int INITIAL_COINS  = 1000;
-    public static void setCoins(int coins) {
-        Coin.coins = coins;
-    }
-
-    static private int coins ;
+    private static int coins ;
 
     public static int getCoins() {
         return coins;
     }
 
-    public static boolean buy(int coins) {
-        if(Coin.coins>= coins)
+    public static void setCoins(int coins) {
+        Coin.coins = coins;
+    }
+
+    public boolean buy(int coin) {
+        if(coins>= coin)
         {
-            Coin.coins += coins;
+            coins += coin;
             return true;
         }
         else
             return false;
     }
 
-    public static void addCoins(int coins) {
-        Coin.coins += coins;
+    public void addCoins(int coin) {
+        coins += coin;
     }
 }

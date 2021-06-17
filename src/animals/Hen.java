@@ -1,7 +1,7 @@
 package animals;
 
 public class Hen extends DomesticAnimal{
-    public Hen ( int price, int timeToCreateProduct) {
+    public Hen () {
         super(100 , 2,Type.HEN);
     }
 

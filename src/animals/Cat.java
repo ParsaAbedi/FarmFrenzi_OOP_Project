@@ -7,7 +7,7 @@ public class Cat extends Animal {
     private FarmPosition farmPosition;
     private directions directions;
 
-    public Cat(int velocity, Type type) {
+    public Cat() {
         super(1, Type.CAT);
     }
 

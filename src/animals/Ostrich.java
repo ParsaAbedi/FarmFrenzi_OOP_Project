@@ -1,7 +1,7 @@
 package animals;
 
 public class Ostrich extends DomesticAnimal{
-    public Ostrich( int price, int timeToCreateProduct) {
+    public Ostrich( ) {
         super(200 , 3,Type.OSTRICH);
     }
 

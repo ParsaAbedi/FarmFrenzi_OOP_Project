@@ -54,7 +54,7 @@ public class Manager {
         this.weavingFactory = WeavingFactory.getInstance();
         this.truck=Truck.getInstance();
         this.wareHouse= WareHouse.getInstance();
-
+        this.coin = new Coin();
     }
 
     public void setCoin(Coin coin) {
@@ -288,7 +288,7 @@ public class Manager {
             for(WildAnimal wildAnimal : mission.wildAnimals)
             {
                 wildAnimal.setEnteranceTime(wildAnimal.getEnteranceTime()-Integer.parseInt(num));
-                if(wildAnimal.getEnteranceTime()<=0)
+                if(wildAnimal.getEnteranceTime()<=0 && !farmland.getFarmLandAnimal().containsValue(wildAnimal))
                 {
                     farmland.getFarmLandAnimal().put(positionMaker(-1,-1),wildAnimal);
                 }
@@ -301,15 +301,15 @@ public class Manager {
     public boolean cage(String x, String y) {
         for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
             if (entry.getKey().getX()==Integer.parseInt(x) &&entry.getKey().getY()==Integer.parseInt(y)){
-             if (entry.getValue().getType()== Type.TIGER ||entry.getValue().getType()== Type.LION
-                     ||entry.getValue().getType()== Type.BEAR  ){
+             if (entry.getValue() instanceof Tiger||entry.getValue() instanceof Lion
+                     ||entry.getValue() instanceof Bear  ){
                  if (((WildAnimal)entry.getValue()).addCage() && ((WildAnimal)entry.getValue()).caged()){
                    farmland.getFarmLandAnimal().remove(entry.getKey(),entry.getValue());
-                   if (entry.getValue().getType()== Type.TIGER)
+                   if (entry.getValue() instanceof Tiger)
                     farmland.getFarmLandProduct().put(positionMaker(-1,-1),new DeadAnimal(500));
-                   else if (entry.getValue().getType()== Type.BEAR)
+                   else if (entry.getValue() instanceof Bear)
                        farmland.getFarmLandProduct().put(positionMaker(-1,-1),new DeadAnimal(400));
-                   else if (entry.getValue().getType()== Type.LION)
+                   else if (entry.getValue() instanceof Lion)
                        farmland.getFarmLandProduct().put(positionMaker(-1,-1),new DeadAnimal(300));
                    System.out.println("it is trapped");
                    Logger.writeInfo("it is trapped");
@@ -330,43 +330,44 @@ public class Manager {
 
     public void inquiry() {
         System.out.println(numOfTurns);
-        farmland.getFarmLandPlant().toString();
+        //farmland.getFarmLandPlant().toString();
         int num = 1;
+
         for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
-            if (entry.getValue().getType() == Type.DOMESTIC) {
-                if (entry.getValue().getType() == Type.HEN) {
+            if (entry.getValue() instanceof DomesticAnimal) {
+                if (entry.getValue() instanceof Hen) {
                     System.out.println("hen " + num + " %" + entry.getValue().getLives()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
                 }
-                else if (entry.getValue().getType() == Type.OSTRICH) {
+                else if (entry.getValue()instanceof Ostrich) {
                     System.out.println("ostrich " + num + " %" + entry.getValue().getLives()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
                 }
-                else if (entry.getValue().getType() == Type.BUFFALO) {
+                else if (entry.getValue() instanceof Buffalo) {
                     System.out.println("buffalo " + num + " %" + entry.getValue().getLives()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
                 }
                 num++;
             }
-            else if (entry.getValue().getType() == Type.HOUND) {
+            else if (entry.getValue() instanceof Hound) {
                 System.out.println("hound " + num + " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
                 num++;
             }
-            else if (entry.getValue().getType() == Type.CAT) {
+            else if (entry.getValue() instanceof Cat ) {
                 System.out.println("cat " + num + " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
                 num++;
             }
             else{
-                if (entry.getValue().getType() == Type.BEAR) {
-                    System.out.println("bear "  + ((WildAnimal)entry.getValue()).getFreedom()+
+                if (entry.getValue() instanceof Bear) {
+                    System.out.println("bear "  + ((WildAnimal)entry.getValue()).getCageTimes()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
                 }
-                else if (entry.getValue().getType() == Type.LION) {
-                    System.out.println("lion "  + ((WildAnimal)entry.getValue()).getFreedom()+
+                else if (entry.getValue() instanceof Lion) {
+                    System.out.println("lion "  + ((WildAnimal)entry.getValue()).getCageTimes()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
                 }
-                else if (entry.getValue().getType() == Type.TIGER) {
-                    System.out.println("tiger "  + ((WildAnimal)entry.getValue()).getFreedom()+
+                else if (entry.getValue() instanceof Tiger) {
+                    System.out.println("tiger "  + ((WildAnimal)entry.getValue()).getCageTimes()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
                 }
             }
@@ -405,42 +406,42 @@ public class Manager {
         workShopName = workShopName.trim();
         workShopName= workShopName.toLowerCase();
         if (Pattern.matches("^cookie\\s*bakery$" , workShopName)
-                && farmland.getBuildings().contains(cookieBakery)){
+                && !cookieBakery.equals(null)){
             if (this.cookieBakery.initiateProduce(5,wareHouse)){
                 Logger.writeInfo("cookie bakery is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^icecream\\s*shop$" , workShopName)&&
-                farmland.getBuildings().contains(iceCreamShop)){
+                !iceCreamShop.equals(null)){
             if (this.iceCreamShop.initiateProduce(7,wareHouse)){
                 Logger.writeInfo("ice cream shop is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^milk\\s*factory$" , workShopName)&&
-                farmland.getBuildings().contains(milkFactory)){
+                !milkFactory.equals(null)){
             if (this.milkFactory.initiateProduce(6,wareHouse)){
                 Logger.writeInfo("milk factory is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^mill$" , workShopName)&&
-                farmland.getBuildings().contains(mill)){
+                !mill.equals(null)){
             if (this.mill.initiateProduce(4,wareHouse)){
                 Logger.writeInfo("mill is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^sewing\\s*workshop$" , workShopName) &&
-                farmland.getBuildings().contains(sewingWorkshop)){
+               !sewingWorkshop.equals(null)){
             if (this.sewingWorkshop.initiateProduce(6,wareHouse)){
                 Logger.writeInfo("sewing workshop is initilized");
                 return true;
             }
         }
         else if (Pattern.matches("^weaving\\s*factory$" , workShopName)&&
-                farmland.getBuildings().contains(weavingFactory)){
+                !weavingFactory.equals(null)){
             if (this.weavingFactory.initiateProduce(5,wareHouse)){
                 Logger.writeInfo("weaving factory is initilized");
                 return true;
@@ -567,7 +568,7 @@ public class Manager {
 
     public boolean pickup(String x, String y) {
         for (Map.Entry<FarmPosition, Products> entry : farmland.getFarmLandProduct().entrySet()) {
-            if (entry.getKey().equals(positionMaker(Integer.parseInt(x), Integer.parseInt(y)))) {
+            if (entry.getKey().getY()==Integer.parseInt(y) && entry.getKey().getX()==Integer.parseInt(x) ) {
                 if (!entry.getValue().equals(null)) {
                     if (wareHouse.canAdd(entry.getValue())) {
                         wareHouse.getStoredProducts().add(entry.getValue());
@@ -597,7 +598,8 @@ public class Manager {
         switch (name){
             case "cat":
                 if (coin.buy(150)){
-                    coin.setCoins(coin.getCoins()-150);
+                    coin.addCoins(-150);
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Cat());
                     System.out.println("cat bought!");
                     Logger.writeInfo("cat bought!");
                     return true;
@@ -610,6 +612,7 @@ public class Manager {
                 case "hound":
                     if (coin.buy(100)){
                         coin.setCoins(coin.getCoins()-100);
+                        farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Hound());
                         System.out.println("hound bought!");
                         Logger.writeInfo("hound bought!");
                         return true;
@@ -622,6 +625,8 @@ public class Manager {
             case "hen":
                 if (coin.buy(100)){
                     coin.setCoins(coin.getCoins()-100);
+                    System.out.println(coin.getCoins());
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Hen());
                     System.out.println("hen bought!");
                     Logger.writeInfo("hen bought!");
                     return true;
@@ -634,6 +639,7 @@ public class Manager {
             case "buffalo":
                 if (coin.buy(400)){
                     coin.setCoins(coin.getCoins()-400);
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Buffalo());
                     System.out.println("buffalo bought!");
                     Logger.writeInfo("buffalo bought!");
                     return true;
@@ -646,6 +652,7 @@ public class Manager {
             case "ostrich":
                 if (coin.buy(200)){
                     coin.setCoins(coin.getCoins()-200);
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Ostrich());
                     System.out.println("ostrich bought!");
                     Logger.writeInfo("ostrich bought!");
                     return true;
@@ -752,10 +759,11 @@ public class Manager {
                     System.out.println(set.getKey().definition + " = " + set.getValue() + "\t value = "+ set.getKey().value+ "\t type = "+ set.getKey().type);
                 }*/
                 coin.setCoins(initialCoins);
+                numOfTurns=1;
                 missions.add(new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price));
             }
         }
-        numOfTurns=0;
+
         return missions;
     }
 }
