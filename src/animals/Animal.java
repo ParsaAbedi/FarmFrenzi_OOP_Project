@@ -77,4 +77,8 @@ public abstract class Animal {
     public int getSellPrice() {
         return this.getSellPrice();
     }
+
+    public int getLives() {
+        return lives;
+    }
 }

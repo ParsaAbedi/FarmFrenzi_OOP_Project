@@ -1,7 +1,5 @@
 package animals;
 
-import products.Products;
-
 public abstract class DomesticAnimal extends Animal {
     private final int  DAMAGE_PER_TIME = 10;
     private int price;

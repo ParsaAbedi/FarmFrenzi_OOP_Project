@@ -46,7 +46,7 @@ public class Farmland {
     }
 
     public Farmland() {
-        this.well = new Well();
+        this.well = Well.getInstance();
     }
 
     public int giveTheNumberOfPlants(FarmPosition farmPosition) {

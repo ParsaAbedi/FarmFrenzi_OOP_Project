@@ -82,6 +82,10 @@ public class InputProcessor extends Menu{
                 returnToMenu();
                 quit = true;
             }
+            else if(Pattern.matches("inquiry", command))
+            {
+                manager.inquiry();
+            }
             else {
                 System.err.println("Invalid input!");
                 logger.writeError("Invalid input!");

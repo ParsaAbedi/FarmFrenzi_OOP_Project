@@ -1,5 +1,7 @@
 package others;
 
+import animals.Type;
+import animals.WildAnimal;
 import buildings.SewingWorkshop;
 import products.Products;
 
@@ -11,13 +13,15 @@ public class Truck {
     private ArrayList<Products> products;
     boolean onTheMove;
     private static Truck ourInstance;
-
+    private int valueOfGoods;
     public static Truck getInstance() {
         if (ourInstance == null) {
             ourInstance = new Truck();
         }
         return ourInstance;
     }
+
+
     public Truck() {
         this.products =new ArrayList<>();
         this.onTheMove=false;
@@ -43,11 +47,26 @@ public class Truck {
         this.CAPACITY = CAPACITY;
     }
 
-    public int getTimeLeft() {
-        return timeLeft;
+    public boolean timePass() {
+        if (this.timeLeft==1){
+            this.onTheMove=false;
+            this.timeLeft=0;
+            return true;
+        }
+        this.timeLeft--;
+        return false;
     }
 
-    public void setTimeLeft(int timeLeft) {
-        this.timeLeft = timeLeft;
+    public int getValueOfGoods() {
+        return valueOfGoods;
+    }
+
+    public void startThePath() {
+        valueOfGoods=0;
+        for (Products product : products) {
+            valueOfGoods+=product.getCost();
+        }
+        this.onTheMove=true;
+        this.timeLeft = 10;
     }
 }

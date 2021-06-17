@@ -292,3 +292,60 @@
 [Info],Tue Jun 15 17:06:49 IRDT 2021,drain from well done
 [Info],Tue Jun 15 17:06:49 IRDT 2021,Task Done!
 
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 20:34:07 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 20:34:07 IRDT 2021,Submenu number 2 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 20:34:07 IRDT 2021,Signed up
+	username: amin	password: mi
+[Error],Tue Jun 15 20:34:07 IRDT 2021,Invalid input in MAIN MENU
+[Info],Tue Jun 15 20:34:07 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 20:34:07 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 20:34:07 IRDT 2021,hen bought!
+[Info],Tue Jun 15 20:34:07 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 20:35:34 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 20:35:34 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 20:35:34 IRDT 2021,Logged in!
+	others.Authentication@4c762604
+[Info],Tue Jun 15 20:35:34 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 20:35:34 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 20:35:34 IRDT 2021,hen bought!
+[Info],Tue Jun 15 20:35:34 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 20:37:39 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 20:37:39 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 20:37:39 IRDT 2021,Logged in!
+	others.Authentication@4c762604
+[Info],Tue Jun 15 20:37:39 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 20:37:39 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 20:37:39 IRDT 2021,hen bought!
+[Info],Tue Jun 15 20:37:39 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 20:37:39 IRDT 2021,Task Done!
+
