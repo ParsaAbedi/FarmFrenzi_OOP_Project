@@ -6,7 +6,7 @@ import others.Mission;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Pattern;
-
+import static main.Main.mission;
 public class Map extends Menu{
     private Manager manager = new Manager();
     ArrayList<Mission> missions = new ArrayList<>(manager.loadMissions());

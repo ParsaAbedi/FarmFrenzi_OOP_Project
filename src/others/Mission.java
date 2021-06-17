@@ -45,4 +45,32 @@ public class Mission {
                 ", prize='" + prize + '\'' +
                 '}';
     }
+
+    public int getMissionNumber() {
+        return missionNumber;
+    }
+
+    public boolean isLocked() {
+        return isLocked;
+    }
+
+    public int getInitialCoins() {
+        return initialCoins;
+    }
+
+    public ArrayList<WildAnimal> getWildAnimals() {
+        return wildAnimals;
+    }
+
+    public HashMap<Task, Boolean> getTasksCheckBoard() {
+        return tasksCheckBoard;
+    }
+
+    public int getMaxTime() {
+        return maxTime;
+    }
+
+    public int getPrize() {
+        return prize;
+    }
 }

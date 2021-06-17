@@ -1,6 +1,7 @@
 package main.menu;
 import animals.Bear;
 import animals.WildAnimal;
+import others.Coin;
 import others.Logger;
 import others.Manager;
 import others.Mission;
@@ -8,6 +9,8 @@ import others.Mission;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Pattern;
+
+import static main.Main.mission;
 
 public class InputProcessor extends Menu{
     static int n = 1;
@@ -19,11 +22,11 @@ public class InputProcessor extends Menu{
         //TODO
         System.out.printf("HERE IS YOUR FARM DUDE!\n");
     }
-    ArrayList<Mission> missions = new ArrayList<>();
     @Override
     public void execute() {
         String command;
         boolean quit = false;
+        Coin.setCoins(mission.getInitialCoins());
         while (!quit)
         {
             command = scanner.nextLine();
@@ -116,11 +119,6 @@ public class InputProcessor extends Menu{
 
     private void truckGo() {
         //TODO
-        missions= new ArrayList<>(manager.loadMissions());
-        for(Mission i :missions)
-        {
-            System.out.printf(i.toString());
-        }
         if(manager.truckGo())
         {
             done();

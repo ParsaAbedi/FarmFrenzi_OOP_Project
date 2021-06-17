@@ -22,6 +22,9 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static main.Main.mission;
+
+
 public class Manager {
     private Random random = new Random();
     public int missionsNum = 0;
@@ -182,7 +185,7 @@ public class Manager {
     public boolean turn(String num) {
         for (int i = 0; i < Integer.parseInt(num); i++) {
 
-            for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
+/*            for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
                 if (entry.getValue().getType()==Type.DOMESTIC){
                     if (((DomesticAnimal)entry.getValue()).itIsTheTime()){
                         switch (((DomesticAnimal)entry.getValue()).getKind()){
@@ -256,9 +259,31 @@ public class Manager {
                     Logger.writeInfo("your product are on the farm land");
                 }
 
+            }*/
+        for(HashMap.Entry<Task, Boolean> set : mission.getTasksCheckBoard().entrySet())
+        {
+            //TODO
+            System.out.printf("Tasks:\n");
+            if(set.getKey().isCompleted())
+            {
+                Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
             }
+            else
+            {
+                Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+                System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
 
-
+            }
+        }
+        for(WildAnimal wildAnimal : mission.wildAnimals)
+        {
+            wildAnimal.setEnteranceTime(wildAnimal.getEnteranceTime()-Integer.parseInt(num));
+            if(wildAnimal.getEnteranceTime()<=0)
+            {
+                farmland.getFarmLandAnimal().put(positionMaker(-1,-1),wildAnimal);
+            }
+        }
         }
         return true;
     }//KIND OF
@@ -504,8 +529,6 @@ public class Manager {
         else return new FarmPosition(random.nextInt(6),random.nextInt(6));
     }
 
-
-
     public ArrayList<Mission> loadMissions()
     {
         ArrayList<Mission> missions = new ArrayList<>();
@@ -543,7 +566,7 @@ public class Manager {
                ArrayList<WildAnimal> wildAnimals = new ArrayList<>();
                 HashMap<Task,Boolean> tasks = new HashMap<>();
                 missionNumber = Integer.parseInt(lines[cnt]);
-                //System.out.printf("mission number: %d \n", missionNumber);
+/*                System.out.printf("mission number: %d \n", missionNumber);*/
                 if(lines[cnt+1].equals("1"))
                     isLocked =true;
                 else
@@ -572,15 +595,22 @@ public class Manager {
                 }
 /*                for(WildAnimal w: wildAnimals)
                     System.out.println(w.toString());*/
-                for( int j=i ; j<i+tasksNumber ; j+=2)
-                {
-                    boolean bool = true;
-                    if(lines[j+1].equals(0))
-                        bool = false;
-                    tasks.put(new Task(lines[j]),bool);
+                for( int j=i ; j<i+2*tasksNumber ; j+=3) {
+                    String type = lines[i + 2];
+                    switch (type) {
+                        case "Bread":
+                            tasks.put(new BreadTask(lines[j], Integer.parseInt(lines[j + 1])), false);
+                            break;
+                        case "Coin":
+                            tasks.put(new CoinTask(lines[j], Integer.parseInt(lines[j + 1])), false);
+                            break;
+                        case "Egg":
+                            tasks.put(new EggTask(lines[j], Integer.parseInt(lines[j + 1])), false);
+                            break;
+                    }
                 }
-/*                for (HashMap.Entry<Task, Boolean> set : tasks.entrySet()) {
-                    System.out.println(set.getKey().definition + " = " + set.getValue());
+              /*  for (HashMap.Entry<Task, Boolean> set : tasks.entrySet()) {
+                    System.out.println(set.getKey().definition + " = " + set.getValue() + "\t value = "+ set.getKey().value+ "\t type = "+ set.getKey().type);
                 }*/
                 missions.add(new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price));
             }

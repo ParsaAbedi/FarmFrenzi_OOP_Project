@@ -7,6 +7,15 @@ public abstract class WildAnimal extends Animal {
     private int sellPrice;
     private int freedom ;
     private int cageTimes;
+
+    public int getEnteranceTime() {
+        return enteranceTime;
+    }
+
+    public void setEnteranceTime(int enteranceTime) {
+        this.enteranceTime = enteranceTime;
+    }
+
     private int enteranceTime ;
     public WildAnimal(int velocity, int freedom, int sellPrice, int cageTimes) {
         super(velocity,Type.WILD);

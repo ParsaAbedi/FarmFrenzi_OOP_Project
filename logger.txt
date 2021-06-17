@@ -292,3 +292,921 @@
 [Info],Tue Jun 15 17:06:49 IRDT 2021,drain from well done
 [Info],Tue Jun 15 17:06:49 IRDT 2021,Task Done!
 
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Entered START MENU
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Logged in!
+	others.Authentication@1786f9d5
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Submenu number 1 selected!
+[Info],Tue Jun 15 17:16:24 IRDT 2021,planted
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:16:24 IRDT 2021,planted
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:16:24 IRDT 2021,planted
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:16:24 IRDT 2021,planted
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:16:24 IRDT 2021,planted
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+[Error],Tue Jun 15 17:16:24 IRDT 2021,well does not have water
+[Error],Tue Jun 15 17:16:24 IRDT 2021,Task Failed!
+
+[Info],Tue Jun 15 17:16:24 IRDT 2021,drain from well done
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:16:24 IRDT 2021,planted
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:16:24 IRDT 2021,planted
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+[Info],Tue Jun 15 17:16:24 IRDT 2021,planted
+[Info],Tue Jun 15 17:16:24 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:06:42 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:08:09 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:08:26 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:14:42 IRDT 2021,Entered START MENU
+[Info],Wed Jun 16 17:14:42 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:14:42 IRDT 2021,Logged in!
+	others.Authentication@548ad73b
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:18:03 IRDT 2021,Entered START MENU
+[Info],Wed Jun 16 17:18:03 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:18:03 IRDT 2021,Logged in!
+	others.Authentication@548ad73b
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:25:52 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:26:12 IRDT 2021,Entered START MENU
+[Error],Wed Jun 16 17:26:12 IRDT 2021,Invalid input in START MENU
+[Info],Wed Jun 16 17:26:12 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:26:12 IRDT 2021,Logged in!
+	others.Authentication@43a0cee9
+[Info],Wed Jun 16 17:26:12 IRDT 2021,Submenu number 1 selected!
+[Info],Wed Jun 16 17:26:12 IRDT 2021,Submenu number 1 selected!
+[Error],Wed Jun 16 17:26:12 IRDT 2021,Invalid input!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:28:16 IRDT 2021,Entered START MENU
+[Info],Wed Jun 16 17:28:16 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:28:16 IRDT 2021,Logged in!
+	others.Authentication@43a0cee9
+[Info],Wed Jun 16 17:28:16 IRDT 2021,Submenu number 1 selected!
+[Info],Wed Jun 16 17:28:16 IRDT 2021,Submenu number 1 selected!
+[Error],Wed Jun 16 17:28:16 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 10
+Task type = Egg
+ is NOT completed!
+
+[Info],Wed Jun 16 17:28:16 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:29:08 IRDT 2021,Entered START MENU
+[Info],Wed Jun 16 17:29:08 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Wed Jun 16 17:29:08 IRDT 2021,Logged in!
+	others.Authentication@704d6e83
+[Info],Wed Jun 16 17:29:08 IRDT 2021,Submenu number 1 selected!
+[Info],Wed Jun 16 17:29:08 IRDT 2021,Submenu number 1 selected!
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Error],Wed Jun 16 17:29:08 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Wed Jun 16 17:29:08 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 10:49:28 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 10:49:28 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 10:49:28 IRDT 2021,Logged in!
+	others.Authentication@12c8a2c0
+[Info],Thu Jun 17 10:49:28 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 10:49:28 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 10:49:28 IRDT 2021,Invalid input!
+[Error],Thu Jun 17 10:49:28 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 10:49:28 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 10:53:03 IRDT 2021,Entered START MENU
+[Info],Thu Jun 17 10:53:03 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Thu Jun 17 10:53:03 IRDT 2021,Logged in!
+	others.Authentication@704d6e83
+[Info],Thu Jun 17 10:53:03 IRDT 2021,Submenu number 1 selected!
+[Info],Thu Jun 17 10:53:03 IRDT 2021,Submenu number 1 selected!
+[Error],Thu Jun 17 10:53:03 IRDT 2021,Task : 
+Task definitio = task1
+Task isDone = false
+Task value = 100
+Task type = Coin
+ is NOT completed!
+
+[Info],Thu Jun 17 10:53:03 IRDT 2021,Task Done!
+

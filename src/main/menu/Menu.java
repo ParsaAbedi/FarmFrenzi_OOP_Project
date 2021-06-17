@@ -5,7 +5,6 @@ import java.util.Scanner;
 import java.util.regex.*;
 import others.*;
 public abstract class Menu {
-    protected Mission mission;
     public static Logger logger = new Logger(new User());
     static Manager manager = new Manager();
     protected Menu parentMenu ;
