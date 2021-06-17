@@ -2,15 +2,15 @@ package animals;
 
 import others.FarmPosition;
 
-public class Hound {
+public class Hound extends Animal {
     private final int PRICE=100;
     private FarmPosition farmPosition;
     private directions directions;
 
     public Hound() {
-        //TODO this.farmPosition = farmPosition;
-        //TODO this.directions = directions;
+        super(1, Type.HOUND);
     }
+
     public void hunt(){
         //TODO
     }

@@ -40,10 +40,10 @@ public class Manager {
     private User player ;
     private String json ;
     private Gson gson = new Gson();
-
+    private Coin coin;
     private Truck truck;
     private WareHouse wareHouse;
-
+    private int numOfTurns;
     public Manager() {
         this.farmland = new Farmland();
         this.sewingWorkshop = SewingWorkshop.getInstance();
@@ -54,6 +54,11 @@ public class Manager {
         this.weavingFactory = WeavingFactory.getInstance();
         this.truck=Truck.getInstance();
         this.wareHouse= WareHouse.getInstance();
+
+    }
+
+    public void setCoin(Coin coin) {
+        this.coin = coin;
     }
 
     public boolean signup(String username , String password)
@@ -119,11 +124,12 @@ public class Manager {
             return true;
         else
             return false;
-    }
+    }//DONE
+
 
     public boolean truckGo() {
         if (!truck.isOnTheMove()){
-            truck.setOnTheMove(true);
+            truck.startThePath();
             Logger.writeInfo("truck started its own path");
             return true;
         }
@@ -158,18 +164,17 @@ public class Manager {
     }//DONE
 
     public boolean loadTruck(String productName) {
-        if (!truck.isOnTheMove()){
+        if (!truck.isOnTheMove()) {
             for (Products storedProduct : wareHouse.getStoredProducts()) {
-                if (storedProduct.equals(productName)){
-                    if (truck.getCAPACITY()+storedProduct.getCapacity()>15){
+                if (storedProduct.equals(productName)) {
+                    if (truck.getCAPACITY() + storedProduct.getCapacity() > 15) {
                         Logger.writeError("the product space is more than capacity");
                         return false;
-                    }
-                    else {
+                    } else {
                         truck.getProducts().add(storedProduct);
-                        truck.setCAPACITY(truck.getCAPACITY()+storedProduct.getCapacity());
+                        truck.setCAPACITY(truck.getCAPACITY() + storedProduct.getCapacity());
                         wareHouse.getStoredProducts().remove(storedProduct);
-                        wareHouse.setCapacity(wareHouse.getCapacity()-storedProduct.getCapacity());
+                        wareHouse.setCapacity(wareHouse.getCapacity() - storedProduct.getCapacity());
                         Logger.writeInfo("loading product successful ");
                         return true;
                     }
@@ -184,8 +189,8 @@ public class Manager {
 
     public boolean turn(String num) {
         for (int i = 0; i < Integer.parseInt(num); i++) {
-
-/*            for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
+            numOfTurns++;
+            for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
                 if (entry.getValue().getType()==Type.DOMESTIC){
                     if (((DomesticAnimal)entry.getValue()).itIsTheTime()){
                         switch (((DomesticAnimal)entry.getValue()).getKind()){
@@ -215,28 +220,28 @@ public class Manager {
                         Logger.writeInfo("a product is gone");
                     }
             }
-            if (farmland.getBuildings().contains(sewingWorkshop)){
+            if (!sewingWorkshop.equals(null)){
                 if (sewingWorkshop.turner()){
                     sewingWorkshop.letsProduce(farmland,positionMaker(-1,-1));
                     System.out.println("your product are on the farm land");
                     Logger.writeInfo("your product are on the farm land");
                 }
             }
-            if (farmland.getBuildings().contains(cookieBakery)){
+            if (!cookieBakery.equals(null)){
                 if (cookieBakery.turner()){
                     cookieBakery.letsProduce(farmland,positionMaker(-1,-1));
                     System.out.println("your product are on the farm land");
                     Logger.writeInfo("your product are on the farm land");
                 }
             }
-            if (farmland.getBuildings().contains(iceCreamShop)){
+            if (!iceCreamShop.equals(null)){
                 if (iceCreamShop.turner()){
                     iceCreamShop.letsProduce(farmland,positionMaker(-1,-1));
                     System.out.println("your product are on the farm land");
                     Logger.writeInfo("your product are on the farm land");
                 }
             }
-            if (farmland.getBuildings().contains(milkFactory)){
+            if (!milkFactory.equals(null)){
                 if (milkFactory.turner()){
                     milkFactory.letsProduce(farmland,positionMaker(-1,-1));
                     System.out.println("your product are on the farm land");
@@ -244,7 +249,7 @@ public class Manager {
                 }
 
             }
-            if (farmland.getBuildings().contains(mill)){
+            if (!mill.equals(null)){
                 if (mill.turner()){
                     mill.letsProduce(farmland,positionMaker(-1,-1));
                     System.out.println("your product are on the farm land");
@@ -252,51 +257,63 @@ public class Manager {
                 }
 
             }
-            if (farmland.getBuildings().contains(weavingFactory)){
+            if (!weavingFactory.equals(null)){
                 if (weavingFactory.turner()){
                     weavingFactory.letsProduce(farmland,positionMaker(-1,-1));
                     System.out.println("your product are on the farm land");
                     Logger.writeInfo("your product are on the farm land");
                 }
 
-            }*/
-        for(HashMap.Entry<Task, Boolean> set : mission.getTasksCheckBoard().entrySet())
-        {
-            //TODO
-            System.out.printf("Tasks:\n");
-            if(set.getKey().isCompleted())
-            {
-                Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
-                System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
             }
-            else
-            {
-                Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
-                System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+            if (truck.timePass()){
+                coin.addCoins(truck.getValueOfGoods());
+            }
 
-            }
-        }
-        for(WildAnimal wildAnimal : mission.wildAnimals)
-        {
-            wildAnimal.setEnteranceTime(wildAnimal.getEnteranceTime()-Integer.parseInt(num));
-            if(wildAnimal.getEnteranceTime()<=0)
+            for(HashMap.Entry<Task, Boolean> set : mission.getTasksCheckBoard().entrySet())
             {
-                farmland.getFarmLandAnimal().put(positionMaker(-1,-1),wildAnimal);
+                //TODO
+                System.out.printf("Tasks:\n");
+                if(set.getKey().isCompleted())
+                {
+                    Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                    System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                }
+                else
+                {
+                    Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+                    System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+
+                }
+            }
+            for(WildAnimal wildAnimal : mission.wildAnimals)
+            {
+                wildAnimal.setEnteranceTime(wildAnimal.getEnteranceTime()-Integer.parseInt(num));
+                if(wildAnimal.getEnteranceTime()<=0)
+                {
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),wildAnimal);
+                }
             }
         }
-        }
+        inquiry();
         return true;
     }//KIND OF
 
     public boolean cage(String x, String y) {
         for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
             if (entry.getKey().getX()==Integer.parseInt(x) &&entry.getKey().getY()==Integer.parseInt(y)){
-             if (entry.getValue().getType()== Type.WILD ){
+             if (entry.getValue().getType()== Type.TIGER ||entry.getValue().getType()== Type.LION
+                     ||entry.getValue().getType()== Type.BEAR  ){
                  if (((WildAnimal)entry.getValue()).addCage() && ((WildAnimal)entry.getValue()).caged()){
                    farmland.getFarmLandAnimal().remove(entry.getKey(),entry.getValue());
-                     System.out.println("it is trapped");
-                     Logger.writeInfo("it is trapped");
-                     return true;
+                   if (entry.getValue().getType()== Type.TIGER)
+                    farmland.getFarmLandProduct().put(positionMaker(-1,-1),new DeadAnimal(500));
+                   else if (entry.getValue().getType()== Type.BEAR)
+                       farmland.getFarmLandProduct().put(positionMaker(-1,-1),new DeadAnimal(400));
+                   else if (entry.getValue().getType()== Type.LION)
+                       farmland.getFarmLandProduct().put(positionMaker(-1,-1),new DeadAnimal(300));
+                   System.out.println("it is trapped");
+                   Logger.writeInfo("it is trapped");
+                   return true;
                  }
                  else if (((WildAnimal)entry.getValue()).addCage()){
                      System.out.println("Caged installed successfully");
@@ -309,6 +326,79 @@ public class Manager {
         System.err.println("there is not a wild one in this place");
         Logger.writeError("there is not a wild one in this place");
         return false;
+    }//DONE
+
+    public void inquiry() {
+        System.out.println(numOfTurns);
+        farmland.getFarmLandPlant().toString();
+        int num = 1;
+        for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
+            if (entry.getValue().getType() == Type.DOMESTIC) {
+                if (entry.getValue().getType() == Type.HEN) {
+                    System.out.println("hen " + num + " %" + entry.getValue().getLives()+
+                            " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
+                }
+                else if (entry.getValue().getType() == Type.OSTRICH) {
+                    System.out.println("ostrich " + num + " %" + entry.getValue().getLives()+
+                            " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
+                }
+                else if (entry.getValue().getType() == Type.BUFFALO) {
+                    System.out.println("buffalo " + num + " %" + entry.getValue().getLives()+
+                            " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
+                }
+                num++;
+            }
+            else if (entry.getValue().getType() == Type.HOUND) {
+                System.out.println("hound " + num + " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
+                num++;
+            }
+            else if (entry.getValue().getType() == Type.CAT) {
+                System.out.println("cat " + num + " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
+                num++;
+            }
+            else{
+                if (entry.getValue().getType() == Type.BEAR) {
+                    System.out.println("bear "  + ((WildAnimal)entry.getValue()).getFreedom()+
+                            " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
+                }
+                else if (entry.getValue().getType() == Type.LION) {
+                    System.out.println("lion "  + ((WildAnimal)entry.getValue()).getFreedom()+
+                            " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
+                }
+                else if (entry.getValue().getType() == Type.TIGER) {
+                    System.out.println("tiger "  + ((WildAnimal)entry.getValue()).getFreedom()+
+                            " ["+entry.getKey().getX()+" "+entry.getKey().getY()+" ]");
+                }
+            }
+
+        }
+        for (Map.Entry<FarmPosition, Products> entry : farmland.getFarmLandProduct().entrySet()){
+            switch (entry.getValue().getType()){
+                case EGG:
+                    System.out.println("egg ["+ entry.getKey().getX()+" "+entry.getKey().getY()+"] ");
+                    break;
+                case FEATHER:
+                    System.out.println("feather ["+ entry.getKey().getX()+" "+entry.getKey().getY()+"] ");
+                    break;
+                case MILK:
+                    System.out.println("milk ["+ entry.getKey().getX()+" "+entry.getKey().getY()+"] ");
+                    break;
+                case PASTORIZEDMILK:
+                    System.out.println("pastorized milk ["+ entry.getKey().getX()+" "+entry.getKey().getY()+"] ");
+                    break;
+                case PIECE:
+                    System.out.println("fabric ["+ entry.getKey().getX()+" "+entry.getKey().getY()+"] ");
+                    break;
+                case FLOUR:
+                    System.out.println("flour ["+ entry.getKey().getX()+" "+entry.getKey().getY()+"] ");
+                    break;
+                case WILD:
+                    System.out.println("dead animal ["+ entry.getKey().getX()+" "+entry.getKey().getY()+"] ");
+
+            }
+        }
+        System.out.println(coin.getCoins());
+
     }//DONE
 
     public boolean work(String workShopName) {
@@ -506,28 +596,77 @@ public class Manager {
         name=name.toLowerCase();
         switch (name){
             case "cat":
-
-                break;
-            case "hound":
-
-                break;
+                if (coin.buy(150)){
+                    coin.setCoins(coin.getCoins()-150);
+                    System.out.println("cat bought!");
+                    Logger.writeInfo("cat bought!");
+                    return true;
+                }
+                else {
+                    System.err.println("insufficient amount of money");
+                    Logger.writeError("insufficient amount of money");
+                    return false;
+                }
+                case "hound":
+                    if (coin.buy(100)){
+                        coin.setCoins(coin.getCoins()-100);
+                        System.out.println("hound bought!");
+                        Logger.writeInfo("hound bought!");
+                        return true;
+                    }
+                    else {
+                        System.err.println("insufficient amount of money");
+                        Logger.writeError("insufficient amount of money");
+                        return false;
+                    }
             case "hen":
-
-                break;
+                if (coin.buy(100)){
+                    coin.setCoins(coin.getCoins()-100);
+                    System.out.println("hen bought!");
+                    Logger.writeInfo("hen bought!");
+                    return true;
+                }
+                else {
+                    System.err.println("insufficient amount of money");
+                    Logger.writeError("insufficient amount of money");
+                    return false;
+                }
             case "buffalo":
-
-                break;
+                if (coin.buy(400)){
+                    coin.setCoins(coin.getCoins()-400);
+                    System.out.println("buffalo bought!");
+                    Logger.writeInfo("buffalo bought!");
+                    return true;
+                }
+                else {
+                    System.err.println("insufficient amount of money");
+                    Logger.writeError("insufficient amount of money");
+                    return false;
+                }
             case "ostrich":
-
-                break;
+                if (coin.buy(200)){
+                    coin.setCoins(coin.getCoins()-200);
+                    System.out.println("ostrich bought!");
+                    Logger.writeInfo("ostrich bought!");
+                    return true;
+                }
+                else {
+                    System.err.println("insufficient amount of money");
+                    Logger.writeError("insufficient amount of money");
+                    return false;
+                }
         }
-        return true;
-    }
+        System.err.println("invalid input");
+        Logger.writeError("invalid input");
+        return false;
+    }//DONE
 
     private FarmPosition positionMaker(int x,int y){
         if (x!=-1)return new FarmPosition(x,y);
         else return new FarmPosition(random.nextInt(6),random.nextInt(6));
-    }
+    }//done
+
+
 
     public ArrayList<Mission> loadMissions()
     {
@@ -612,9 +751,11 @@ public class Manager {
               /*  for (HashMap.Entry<Task, Boolean> set : tasks.entrySet()) {
                     System.out.println(set.getKey().definition + " = " + set.getValue() + "\t value = "+ set.getKey().value+ "\t type = "+ set.getKey().type);
                 }*/
+                coin.setCoins(initialCoins);
                 missions.add(new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price));
             }
         }
+        numOfTurns=0;
         return missions;
     }
 }

@@ -8,7 +8,7 @@ public class Tiger extends WildAnimal {
     }
 
     public Tiger() {
-        super(2,4,500,0);
+        super(2,4,500,0,Type.TIGER);
     }
 
 }

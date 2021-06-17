@@ -23,6 +23,8 @@ public class Products {
             case MAIN :
                 timeToPick =6;
                 break;
+            case WILDANIMALS:
+                timeToPick = 5;
         }
         this.timeLeft= timeToPick;
         this.type=type;
@@ -30,6 +32,10 @@ public class Products {
 
     public Type getType() {
         return type;
+    }
+
+    public int getCost() {
+        return cost;
     }
 
     public boolean timeChecker(){

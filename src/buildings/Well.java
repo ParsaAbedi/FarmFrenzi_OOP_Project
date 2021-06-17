@@ -3,8 +3,15 @@ package buildings;
 public class Well implements time {
     private final int CAPACITY  = 5;
     private int currentCapacity;
+    private static Well ourInstance;
 
-    public Well() {
+    public static Well getInstance() {
+        if (ourInstance == null) {
+            ourInstance = new Well();
+        }
+        return ourInstance;
+    }
+    public Well(){
         this.currentCapacity =0;
         drainWell();
     }

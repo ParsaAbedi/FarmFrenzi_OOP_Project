@@ -17,8 +17,8 @@ public abstract class WildAnimal extends Animal {
     }
 
     private int enteranceTime ;
-    public WildAnimal(int velocity, int freedom, int sellPrice, int cageTimes) {
-        super(velocity,Type.WILD);
+    public WildAnimal(int velocity, int freedom, int sellPrice, int cageTimes,Type type) {
+        super(velocity,type );
         this.freedom = freedom;
         this.sellPrice=sellPrice;
         this.cageTimes=cageTimes;
@@ -47,6 +47,9 @@ public abstract class WildAnimal extends Animal {
             return true;
         return false;
     }
+
+
+
     public boolean addCage(){
         if (cageTimes<freedom){
             this.cageTimes++;
