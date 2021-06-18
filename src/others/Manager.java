@@ -158,14 +158,11 @@ public class Manager {
                     return true;
                 }
             }
-            Logger.writeError("you do not have this product in your truck");
             return false;
         }
         Logger.writeError("truck is on the move");
         return false;
-
-    }//DONE
-
+    }
     public boolean loadTruck(String productName) {
         if (!truck.isOnTheMove()) {
                 if (!suitableOne(productName).equals(null)) {
@@ -304,7 +301,6 @@ public class Manager {
                     }
                 }
                 entry.getValue().move();
-
             }
             for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet())   {
                 if (entry.getValue() instanceof DomesticAnimal){
@@ -397,11 +393,7 @@ public class Manager {
                     {
                         set.setValue(true);
                         Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
-                    }
-                    else
-                    {
-                        Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
-
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                     }
                 }
                 else if(set.getKey() instanceof EggTask)
@@ -410,10 +402,12 @@ public class Manager {
                     {
                         set.setValue(true);
                         Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                     }
                     else
                     {
                         Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
 
                     }
                 }
@@ -423,10 +417,12 @@ public class Manager {
                     {
                         set.setValue(true);
                         Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                     }
                     else
                     {
                         Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
 
                     }
                 }
@@ -441,7 +437,7 @@ public class Manager {
                 wildAnimal.setEnteranceTime(wildAnimal.getEnteranceTime()-Integer.parseInt(num));
                 if(wildAnimal.getEnteranceTime()<=0 && !farmland.getFarmLandAnimal().containsValue(wildAnimal))
                 {
-                    farmland.getFarmLandAnimal().put(((Animal)wildAnimal).getFarmPosition(),wildAnimal);
+                    farmland.getFarmLandAnimal().put((wildAnimal).getFarmPosition(),wildAnimal);
                 }
             }
         }
@@ -501,6 +497,7 @@ public class Manager {
     }//DONE
 
     public void inquiry() {
+
         System.out.println(numOfTurns);
         //farmland.farmLandToString();
         int num = 1;
@@ -570,57 +567,10 @@ public class Manager {
 
             }
         }
-
         System.out.println(purse.getCoins());
 
     }//DONE
 
-    void drawFarmland()
-    {
-        String txt = "\n";
-
-        txt+="\n";
-        for(int x =0 ; x<6 ; x++)
-        {
-            String line=x+"  :";
-            for(int y=0 ; y<6 ; y++)
-            {
-                String sqr = "";
-                for(Map.Entry<FarmPosition,Animal> entry : farmland.getFarmLandAnimal().entrySet())
-                {
-                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y)
-                    {
-                        sqr+=entry.getValue().getType().toString().substring(0,1);
-                    }
-                }
-                for(Map.Entry<FarmPosition,Products> entry : farmland.getFarmLandProduct().entrySet())
-                {
-                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y)
-                    {
-                        sqr+=entry.getValue().getType().toString().substring(0,1);
-                    }
-                }
-                for(Map.Entry<FarmPosition,Integer> entry :farmland.getFarmLandPlant().entrySet())
-                {
-                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y&& entry.getValue()>0)
-                    {
-                        sqr+="G";
-                    }
-                }
-                while (sqr.length()<4)
-                    sqr+=" ";
-                line+="|"+sqr;
-            }
-            line+="|\n";
-            txt+=line;
-            line = "";
-            for(int i=0 ; i<36 ; i++)
-                line+="-";
-            line+="\n";
-            txt+=line;
-        }
-        Logger.writeInfo(txt);
-    }
     public boolean work(String workShopName) {
         workShopName = workShopName.trim();
         workShopName= workShopName.toLowerCase();
@@ -936,6 +886,7 @@ public class Manager {
                ArrayList<WildAnimal> wildAnimals = new ArrayList<>();
                 HashMap<Task,Boolean> tasks = new HashMap<>();
                 missionNumber = Integer.parseInt(lines[cnt]);
+/*                System.out.printf("mission number: %d \n", missionNumber);*/
                 if(lines[cnt+1].equals("1"))
                     isLocked =true;
                 else
@@ -964,7 +915,7 @@ public class Manager {
                 }
 /*                for(WildAnimal w: wildAnimals)
                     System.out.println(w.toString());*/
-                for( int j=i ; j<i+2*tasksNumber-2 ; j+=3) {
+                for( int j=i ; j<i+2*tasksNumber ; j+=3) {
                     String type = lines[i + 2];
                     switch (type) {
                         case "Bread":
@@ -984,8 +935,8 @@ public class Manager {
                 purse.setCoins(initialCoins);
                 numOfTurns=1;
                 Mission thisMission = new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price);
-                    if(thisMission.getMissionNumber()==1 )
-                        thisMission.setLocked(false);
+                if(thisMission.getMissionNumber()== 1)
+                    thisMission.setLocked(false);
                 missions.add(thisMission);
             }
         }
@@ -1003,5 +954,4 @@ public class Manager {
          }
          return bool;
      }
-
 }
