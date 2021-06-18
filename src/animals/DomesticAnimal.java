@@ -81,6 +81,7 @@ public abstract class DomesticAnimal extends Animal {
             lives -= 10 ;
             return false;
         }
+        lives=0;
         return true;
     }
 }

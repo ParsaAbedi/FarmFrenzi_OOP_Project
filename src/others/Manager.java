@@ -142,21 +142,20 @@ public class Manager {
     }//DONE
 
     public boolean unloadTruck(String productName) {
-        if (!truck.isOnTheMove()){
-            for (Products storedProduct : truck.getProducts()) {
-                if (storedProduct.equals(productName)){
-                    if (wareHouse.getCapacity()+storedProduct.getCapacity()>30){
-                        Logger.writeError("the product space is more than capacity and we can not unload it");
-                        return false;
-                    }
-                    else {
-                        truck.getProducts().remove(storedProduct);
-                        truck.setCAPACITY(truck.getCAPACITY()-storedProduct.getCapacity());
-                        wareHouse.getStoredProducts().remove(storedProduct);
-                        wareHouse.setCapacity(wareHouse.getCapacity()+storedProduct.getCapacity());
-                        Logger.writeInfo("unload product successful ");
-                        return true;
-                    }
+        if (!truck.isOnTheMove()) {
+            if (!suitableOne(productName).equals(null)) {
+                Products pack = suitableOne(productName);
+                if (wareHouse.getCapacity() + pack.getCapacity() > 30) {
+                    Logger.writeError("the product space is more than capacity and we can not unload it");
+                    return false;
+                }
+                else {
+                    truck.getProducts().remove(pack);
+                    truck.setCAPACITY(truck.getCAPACITY() - pack.getCapacity());
+                    wareHouse.getStoredProducts().remove(pack);
+                    wareHouse.setCapacity(wareHouse.getCapacity() + pack.getCapacity());
+                    Logger.writeInfo("unload product successful ");
+                    return true;
                 }
             }
             Logger.writeError("you do not have this product in your truck");
@@ -164,32 +163,81 @@ public class Manager {
         }
         Logger.writeError("truck is on the move");
         return false;
-
-    }//DONE
-
+    }
     public boolean loadTruck(String productName) {
         if (!truck.isOnTheMove()) {
-            for (Products storedProduct : wareHouse.getStoredProducts()) {
-                if (storedProduct.equals(productName)) {
-                    if (truck.getCAPACITY() + storedProduct.getCapacity() > 15) {
+                if (!suitableOne(productName).equals(null)) {
+                    Products pack =suitableOne(productName);
+                    if (truck.getCAPACITY() + pack.getCapacity() > 15) {
                         Logger.writeError("the product space is more than capacity");
                         return false;
-                    } else {
-                        truck.getProducts().add(storedProduct);
-                        truck.setCAPACITY(truck.getCAPACITY() + storedProduct.getCapacity());
-                        wareHouse.getStoredProducts().remove(storedProduct);
-                        wareHouse.setCapacity(wareHouse.getCapacity() - storedProduct.getCapacity());
+                    }
+                    else {
+                        truck.getProducts().add(pack);
+                        truck.setCAPACITY(truck.getCAPACITY() + pack.getCapacity());
+                        wareHouse.getStoredProducts().remove(pack);
+                        wareHouse.setCapacity(wareHouse.getCapacity() - pack.getCapacity());
                         Logger.writeInfo("loading product successful ");
                         return true;
                     }
                 }
-            }
             Logger.writeError("you do not have this product in your warehouse");
             return false;
         }
         Logger.writeError("truck is on the move");
         return false;
     }//DONE
+
+    public Products suitableOne(String name){
+        name=name.toLowerCase();
+        name=name.trim();
+        switch (name){
+            case "dead animal":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof DeadAnimal) return storedProduct;
+                }
+            case "egg":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof Egg) return storedProduct;
+                }
+            case "milk":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof Milk) return storedProduct;
+                }
+            case "feather":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof Feather) return storedProduct;
+                }
+            case "flour":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof Flour) return storedProduct;
+                }
+            case "pastorized milk":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof PastorizedMilk) return storedProduct;
+                }
+            case "ice cream":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof IceCream) return storedProduct;
+                }
+            case "bread":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof Bread) return storedProduct;
+                }
+            case "fabric":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof Piece) return storedProduct;
+                }
+            case "clothes":
+                for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof Clothes) return storedProduct;
+                }
+
+        }
+        System.err.println("invalid input");
+        Logger.writeError("invalid input");
+        return null;
+    }
 
     public boolean turn(String num) {
         for (int i = 0; i < Integer.parseInt(num); i++) {
@@ -298,12 +346,6 @@ public class Manager {
                         Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                         System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                     }
-                    else
-                    {
-                        Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
-                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
-
-                    }
                 }
                 else if(set.getKey() instanceof EggTask)
                 {
@@ -346,7 +388,7 @@ public class Manager {
                 wildAnimal.setEnteranceTime(wildAnimal.getEnteranceTime()-Integer.parseInt(num));
                 if(wildAnimal.getEnteranceTime()<=0 && !farmland.getFarmLandAnimal().containsValue(wildAnimal))
                 {
-                    farmland.getFarmLandAnimal().put(((Animal)wildAnimal).getFarmPosition(),wildAnimal);
+                    farmland.getFarmLandAnimal().put((wildAnimal).getFarmPosition(),wildAnimal);
                 }
             }
         }
@@ -387,12 +429,13 @@ public class Manager {
     }//DONE
 
     public void inquiry() {
+
         System.out.println(numOfTurns);
         //farmland.farmLandToString();
         int num = 1;
 
         for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
-            if (entry.getValue() instanceof DomesticAnimal) {
+            if (entry.getValue() instanceof DomesticAnimal && entry.getValue().getLives()!=0) {
                 if (entry.getValue() instanceof Hen) {
                     System.out.println("hen " + num + " %" + entry.getValue().getLives()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+"]");
