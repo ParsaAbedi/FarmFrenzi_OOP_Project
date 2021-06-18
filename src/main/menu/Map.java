@@ -61,7 +61,7 @@ public class Map extends Menu{
                     if(!missions.get(nextMenuNum-1).isLocked())
                     {
                         logger.writeInfo("Submenu number "+nextMenuNum+" selected!");
-                        mission = missions.get(nextMenuNum-1);
+                        mission =missions.get(nextMenuNum-1);
                         System.out.println(mission.toString());
                         nextMenu = submenus.get(nextMenuNum);
                         quit = true;

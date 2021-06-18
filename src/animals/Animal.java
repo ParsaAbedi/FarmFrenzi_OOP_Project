@@ -7,7 +7,7 @@ import static others.FarmPosition.*;
 
 public abstract class Animal {
     static final int MAX_LIVES = 100;
-    private FarmPosition farmPosition = new FarmPosition() ;
+    protected FarmPosition farmPosition = new FarmPosition() ;
     protected int  lives , velocity ;
     private directions moveDirection;
     private Random random = new Random();
@@ -53,7 +53,12 @@ public abstract class Animal {
         farmPosition.setRandomY();
         return true;
     }
-
+    public boolean move(FarmPosition target) {
+        System.out.println("farmposition : {"+ moveSmart(farmPosition,target).getX()+","+moveSmart(farmPosition,target).getY()+"}");
+        farmPosition.setX(moveSmart(farmPosition,target).getX());
+        farmPosition.setY(moveSmart(farmPosition,target).getY());
+        return true;
+    }
     public Animal() {
     }
 

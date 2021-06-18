@@ -144,7 +144,7 @@ public class Manager {
     public boolean unloadTruck(String productName) {
         if (!truck.isOnTheMove()){
             for (Products storedProduct : truck.getProducts()) {
-                if (storedProduct.equals(productName)){
+                if (storedProduct.getType().toString().toLowerCase().equals(productName.toLowerCase())){
                     if (wareHouse.getCapacity()+storedProduct.getCapacity()>30){
                         Logger.writeError("the product space is more than capacity and we can not unload it");
                         return false;
@@ -170,7 +170,7 @@ public class Manager {
     public boolean loadTruck(String productName) {
         if (!truck.isOnTheMove()) {
             for (Products storedProduct : wareHouse.getStoredProducts()) {
-                if (storedProduct.equals(productName)) {
+                if (storedProduct.getType().toString().toLowerCase().equals(productName.toLowerCase())) {
                     if (truck.getCAPACITY() + storedProduct.getCapacity() > 15) {
                         Logger.writeError("the product space is more than capacity");
                         return false;
@@ -209,7 +209,7 @@ public class Manager {
                             nearestProductPos(entry.getKey()).getX()+","+nearestProductPos(entry.getKey()).getY()+
                             "}\n\tmoveSmart: {"+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getX()+
                             ","+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getY()+"}");*/
-                    ((Cat)(entry.getValue())).move(nearestProductPos(entry.getKey()));
+                    entry.getValue().move(nearestProductPos(entry.getKey()));
                 }
                 else
                     entry.getValue().move();
@@ -479,6 +479,7 @@ public class Manager {
 
             }
         }
+
         System.out.println(purse.getCoins());
 
     }//DONE
@@ -508,6 +509,13 @@ public class Manager {
                         sqr+=entry.getValue().getType().toString().substring(0,1);
                     }
                 }
+                for(Map.Entry<FarmPosition,Integer> entry :farmland.getFarmLandPlant().entrySet())
+                {
+                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y&& entry.getValue()>0)
+                    {
+                        sqr+="G";
+                    }
+                }
                 while (sqr.length()<4)
                     sqr+=" ";
                 line+="|"+sqr;
@@ -520,7 +528,7 @@ public class Manager {
             line+="\n";
             txt+=line;
         }
-        Logger.writeInfo(txt);
+        Logger.drawMap(txt);
     }
     public boolean work(String workShopName) {
         workShopName = workShopName.trim();
@@ -837,7 +845,6 @@ public class Manager {
                ArrayList<WildAnimal> wildAnimals = new ArrayList<>();
                 HashMap<Task,Boolean> tasks = new HashMap<>();
                 missionNumber = Integer.parseInt(lines[cnt]);
-/*                System.out.printf("mission number: %d \n", missionNumber);*/
                 if(lines[cnt+1].equals("1"))
                     isLocked =true;
                 else
@@ -866,7 +873,7 @@ public class Manager {
                 }
 /*                for(WildAnimal w: wildAnimals)
                     System.out.println(w.toString());*/
-                for( int j=i ; j<i+2*tasksNumber ; j+=3) {
+                for( int j=i ; j<i+2*tasksNumber-2 ; j+=3) {
                     String type = lines[i + 2];
                     switch (type) {
                         case "Bread":
@@ -886,8 +893,8 @@ public class Manager {
                 purse.setCoins(initialCoins);
                 numOfTurns=1;
                 Mission thisMission = new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price);
-                if(thisMission.getMissionNumber()== 1)
-                    thisMission.setLocked(false);
+                    if(thisMission.getMissionNumber()==1 )
+                        thisMission.setLocked(false);
                 missions.add(thisMission);
             }
         }
