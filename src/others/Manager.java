@@ -163,7 +163,9 @@ public class Manager {
         }
         Logger.writeError("truck is on the move");
         return false;
-    }
+
+    }//DONE
+
     public boolean loadTruck(String productName) {
         if (!truck.isOnTheMove()) {
                 if (!suitableOne(productName).equals(null)) {
@@ -306,7 +308,7 @@ public class Manager {
                             nearestProductPos(entry.getKey()).getX()+","+nearestProductPos(entry.getKey()).getY()+
                             "}\n\tmoveSmart: {"+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getX()+
                             ","+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getY()+"}");*/
-                    ((Cat)(entry.getValue())).move(nearestProductPos(entry.getKey()));
+                    entry.getValue().move(nearestProductPos(entry.getKey()));
                 }
                 else
                     entry.getValue().move();
@@ -408,7 +410,6 @@ public class Manager {
                     {
                         Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
 
-                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                     }
                 }
                 else if(set.getKey() instanceof EggTask)
@@ -448,7 +449,7 @@ public class Manager {
                 wildAnimal.setEnteranceTime(wildAnimal.getEnteranceTime()-Integer.parseInt(num));
                 if(wildAnimal.getEnteranceTime()<=0 && !farmland.getFarmLandAnimal().containsValue(wildAnimal))
                 {
-                    farmland.getFarmLandAnimal().put((wildAnimal).getFarmPosition(),wildAnimal);
+                    farmland.getFarmLandAnimal().put(((Animal)wildAnimal).getFarmPosition(),wildAnimal);
                 }
             }
         }
@@ -508,13 +509,12 @@ public class Manager {
     }//DONE
 
     public void inquiry() {
-
         System.out.println(numOfTurns);
         //farmland.farmLandToString();
         int num = 1;
 
         for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
-            if (entry.getValue() instanceof DomesticAnimal && entry.getValue().getLives()!=0) {
+            if (entry.getValue() instanceof DomesticAnimal) {
                 if (entry.getValue() instanceof Hen) {
                     System.out.println("hen " + num + " %" + entry.getValue().getLives()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+"]");
@@ -607,6 +607,13 @@ public class Manager {
                         sqr+=entry.getValue().getType().toString().substring(0,1);
                     }
                 }
+                for(Map.Entry<FarmPosition,Integer> entry :farmland.getFarmLandPlant().entrySet())
+                {
+                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y&& entry.getValue()>0)
+                    {
+                        sqr+="G";
+                    }
+                }
                 while (sqr.length()<4)
                     sqr+=" ";
                 line+="|"+sqr;
@@ -619,7 +626,7 @@ public class Manager {
             line+="\n";
             txt+=line;
         }
-        Logger.writeInfo(txt);
+        Logger.drawMap(txt);
     }
     public boolean work(String workShopName) {
         workShopName = workShopName.trim();
@@ -965,7 +972,7 @@ public class Manager {
                 }
 /*                for(WildAnimal w: wildAnimals)
                     System.out.println(w.toString());*/
-                for( int j=i ; j<i+2*tasksNumber ; j+=3) {
+                for( int j=i ; j<i+2*tasksNumber-2 ; j+=3) {
                     String type = lines[i + 2];
                     switch (type) {
                         case "Bread":
@@ -985,8 +992,8 @@ public class Manager {
                 purse.setCoins(initialCoins);
                 numOfTurns=1;
                 Mission thisMission = new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price);
-                if(thisMission.getMissionNumber()== 1)
-                    thisMission.setLocked(false);
+                    if(thisMission.getMissionNumber()==1 )
+                        thisMission.setLocked(false);
                 missions.add(thisMission);
             }
         }
