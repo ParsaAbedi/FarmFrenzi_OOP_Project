@@ -7999,3 +7999,70 @@ Task type = Egg --> false
 [Info],Fri Jun 18 17:53:29 IRDT 2021,Submenu number 1 selected!
 [Info],Fri Jun 18 17:53:29 IRDT 2021,Mission 3 is locked!
 [Info],Fri Jun 18 17:53:29 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 18:25:09 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 18:25:09 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 18:25:09 IRDT 2021,Logged in!
+	others.Authentication@530612ba
+[Info],Fri Jun 18 18:25:09 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 18:25:09 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 18:25:09 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 18:25:09 IRDT 2021,hen bought!
+[Info],Fri Jun 18 18:25:09 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 18:25:09 IRDT 2021,purse comtains 750 coins
+[Info],Fri Jun 18 18:25:09 IRDT 2021,cat bought!
+[Info],Fri Jun 18 18:25:09 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Submenu number 1 selected!
+[Error],Fri Jun 18 18:29:09 IRDT 2021,PASSWORD IS WRONG!
+[Error],Fri Jun 18 18:29:09 IRDT 2021,PASSWORD IS WRONG!
+[Error],Fri Jun 18 18:29:09 IRDT 2021,PASSWORD IS WRONG!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Logged in!
+	others.Authentication@530612ba
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Mission 2 is locked!
+[Error],Fri Jun 18 18:29:09 IRDT 2021,Invalid input in MAIN MENU
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 18:29:09 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 18:29:09 IRDT 2021,hen bought!
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 18:29:09 IRDT 2021,purse comtains 750 coins
+[Info],Fri Jun 18 18:29:09 IRDT 2021,cat bought!
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Mission{mission number='1', isLocked='false', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Error],Fri Jun 18 18:29:09 IRDT 2021,Invalid input in MAIN MENU
+[Error],Fri Jun 18 18:29:09 IRDT 2021,Invalid input in MAIN MENU
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 18:29:09 IRDT 2021,purse comtains 400 coins
+[Info],Fri Jun 18 18:29:09 IRDT 2021,hen bought!
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 18:29:09 IRDT 2021,purse comtains 250 coins
+[Info],Fri Jun 18 18:29:09 IRDT 2021,cat bought!
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 18:29:09 IRDT 2021,an egg produced
+[Info],Fri Jun 18 18:29:09 IRDT 2021,Mission{mission number='2', isLocked='false', initialCoins='500', maxTime='5', prize='5'}
+COMPLETED!

@@ -302,16 +302,7 @@ public class Manager {
                         Logger.writeInfo("an animal died!!");
                     }
                 }
-                else if(entry.getValue() instanceof Cat)
-                {
-/*                    Logger.writeInfo("\n\tnearest product : {"+
-                            nearestProductPos(entry.getKey()).getX()+","+nearestProductPos(entry.getKey()).getY()+
-                            "}\n\tmoveSmart: {"+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getX()+
-                            ","+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getY()+"}");*/
-                    entry.getValue().move(nearestProductPos(entry.getKey()));
-                }
-                else
-                    entry.getValue().move();
+                entry.getValue().move();
 
             }
             for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet())   {
