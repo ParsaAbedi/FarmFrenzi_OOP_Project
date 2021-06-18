@@ -203,15 +203,6 @@ public class Manager {
                         Logger.writeInfo("an animal died!!");
                     }
                 }
-                else if(entry.getValue() instanceof Cat)
-                {
-/*                    Logger.writeInfo("\n\tnearest product : {"+
-                            nearestProductPos(entry.getKey()).getX()+","+nearestProductPos(entry.getKey()).getY()+
-                            "}\n\tmoveSmart: {"+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getX()+
-                            ","+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getY()+"}");*/
-                    entry.getValue().move(nearestProductPos(entry.getKey()));
-                }
-                else
                     entry.getValue().move();
 
             }
@@ -873,7 +864,7 @@ public class Manager {
                 }
 /*                for(WildAnimal w: wildAnimals)
                     System.out.println(w.toString());*/
-                for( int j=i ; j<i+2*tasksNumber-2 ; j+=3) {
+                for( int j=i ; j<i+2*tasksNumber ; j+=3) {
                     String type = lines[i + 2];
                     switch (type) {
                         case "Bread":
@@ -906,6 +897,7 @@ public class Manager {
          boolean bool = true;
          for(Map.Entry<Task,Boolean> entry : mission.getTasksCheckBoard().entrySet())
          {
+             System.out.println(entry.getKey().toString());
              if(entry.getValue() == false)
                 bool = false;
              Logger.writeInfo(entry.getKey()+" --> "+entry.getValue()+"\n");

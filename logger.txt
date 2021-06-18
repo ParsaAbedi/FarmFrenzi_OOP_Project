@@ -7999,3 +7999,87 @@ Task type = Egg --> false
 [Info],Fri Jun 18 17:53:29 IRDT 2021,Submenu number 1 selected!
 [Info],Fri Jun 18 17:53:29 IRDT 2021,Mission 3 is locked!
 [Info],Fri Jun 18 17:53:29 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Logged in!
+	others.Authentication@6c9f5c0d
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Mission{mission number='1', isLocked='false', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Mission 3 is locked!
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Mission 3 is locked!
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 18:59:57 IRDT 2021,purse comtains 400 coins
+[Info],Fri Jun 18 18:59:57 IRDT 2021,hen bought!
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 18:59:57 IRDT 2021,Mission{mission number='2', isLocked='false', initialCoins='500', maxTime='5', prize='5'}
+COMPLETED!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 19:04:42 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 19:04:42 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 19:04:42 IRDT 2021,Logged in!
+	others.Authentication@6c9f5c0d
+[Info],Fri Jun 18 19:04:42 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 19:04:42 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 19:04:42 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 19:04:42 IRDT 2021,hen bought!
+[Info],Fri Jun 18 19:04:42 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 19:04:42 IRDT 2021,Mission{mission number='1', isLocked='false', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 19:06:17 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 19:06:17 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 19:06:17 IRDT 2021,Logged in!
+	others.Authentication@530612ba
+[Info],Fri Jun 18 19:06:17 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 19:06:17 IRDT 2021,Submenu number 1 selected!
+[Error],Fri Jun 18 19:06:17 IRDT 2021,Task : 
+Task definitio = Egg
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 19:06:17 IRDT 2021,Task definitio = Egg
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 19:06:17 IRDT 2021,Task definitio = Egg
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 19:06:17 IRDT 2021,Task Done!
+
