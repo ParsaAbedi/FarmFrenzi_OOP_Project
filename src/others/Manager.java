@@ -203,7 +203,17 @@ public class Manager {
                         Logger.writeInfo("an animal died!!");
                     }
                 }
-                entry.getValue().move();
+                else if(entry.getValue() instanceof Cat)
+                {
+/*                    Logger.writeInfo("\n\tnearest product : {"+
+                            nearestProductPos(entry.getKey()).getX()+","+nearestProductPos(entry.getKey()).getY()+
+                            "}\n\tmoveSmart: {"+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getX()+
+                            ","+moveSmart(entry.getKey(),nearestProductPos(entry.getKey())).getY()+"}");*/
+                    ((Cat)(entry.getValue())).move(nearestProductPos(entry.getKey()));
+                }
+                else
+                    entry.getValue().move();
+
             }
             for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet())   {
                 if (entry.getValue() instanceof DomesticAnimal){
@@ -296,12 +306,10 @@ public class Manager {
                     {
                         set.setValue(true);
                         Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
-                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                     }
                     else
                     {
                         Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
-                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
 
                     }
                 }
@@ -311,12 +319,10 @@ public class Manager {
                     {
                         set.setValue(true);
                         Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
-                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                     }
                     else
                     {
                         Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
-                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
 
                     }
                 }
@@ -326,12 +332,10 @@ public class Manager {
                     {
                         set.setValue(true);
                         Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
-                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
                     }
                     else
                     {
                         Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
-                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
 
                     }
                 }
@@ -351,8 +355,27 @@ public class Manager {
             }
         }
         inquiry();
+        drawFarmland();
         return true;
     }//KIND OF
+
+    private FarmPosition nearestProductPos(FarmPosition key) {
+        FarmPosition pos = new FarmPosition();
+        pos.setX(0);
+        pos.setY(0);
+        int distance = 10;
+        int kx = key.getX();
+        int ky =key.getY();
+        for(Map.Entry<FarmPosition,Products> entry : farmland.getFarmLandProduct().entrySet())
+        {
+            int x = entry.getKey().getX();
+            int y = entry.getKey().getY();
+            int di = Math.abs(x-kx)+Math.abs(y-ky);
+            if(di<distance)
+                pos = entry.getKey();
+        }
+        return pos;
+    }
 
     public boolean cage(String x, String y) {
         for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
@@ -460,6 +483,45 @@ public class Manager {
 
     }//DONE
 
+    void drawFarmland()
+    {
+        String txt = "\n";
+
+        txt+="\n";
+        for(int x =0 ; x<6 ; x++)
+        {
+            String line=x+"  :";
+            for(int y=0 ; y<6 ; y++)
+            {
+                String sqr = "";
+                for(Map.Entry<FarmPosition,Animal> entry : farmland.getFarmLandAnimal().entrySet())
+                {
+                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y)
+                    {
+                        sqr+=entry.getValue().getType().toString().substring(0,1);
+                    }
+                }
+                for(Map.Entry<FarmPosition,Products> entry : farmland.getFarmLandProduct().entrySet())
+                {
+                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y)
+                    {
+                        sqr+=entry.getValue().getType().toString().substring(0,1);
+                    }
+                }
+                while (sqr.length()<4)
+                    sqr+=" ";
+                line+="|"+sqr;
+            }
+            line+="|\n";
+            txt+=line;
+            line = "";
+            for(int i=0 ; i<36 ; i++)
+                line+="-";
+            line+="\n";
+            txt+=line;
+        }
+        Logger.writeInfo(txt);
+    }
     public boolean work(String workShopName) {
         workShopName = workShopName.trim();
         workShopName= workShopName.toLowerCase();
@@ -843,4 +905,5 @@ public class Manager {
          }
          return bool;
      }
+
 }

@@ -82,7 +82,28 @@ public abstract class Animal {
         return lives;
     }
 
+    public void setFarmPosition(FarmPosition farmPosition1) {
+        farmPosition .setX(farmPosition1.getX());
+        farmPosition .setY(farmPosition1.getY());
+    }
+
     public FarmPosition getFarmPosition() {
         return farmPosition;
     }
+    protected FarmPosition moveSmart (FarmPosition obj , FarmPosition target)
+    {
+        FarmPosition nxt = new FarmPosition();
+        if(obj.getX()>target.getX())
+            nxt.setX(target.getX()+1);
+        else if(obj.getX()<target.getX())
+            nxt.setX(target.getX()-1);
+        else if(obj.getY()<target.getY())
+            nxt.setY(target.getX()-1);
+        else if(obj.getY()>target.getY())
+            nxt.setY(target.getY()+1);
+        else
+            return obj;
+        return nxt;
+    }
+
 }
