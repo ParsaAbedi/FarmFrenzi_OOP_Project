@@ -11,10 +11,9 @@ public class BreadTask extends Task{
         super(definition,value);
         this.type = "Bread";
     }
-    @Override
-    public boolean isCompleted() {
+    public boolean isCompleted(WareHouse wareHouse) {
         int num=0;
-        ArrayList<Products> products = WareHouse.getStoredProducts();
+        ArrayList<Products> products = wareHouse.getStoredProducts();
         for(Products product : products)
         {
             if(product instanceof Bread)

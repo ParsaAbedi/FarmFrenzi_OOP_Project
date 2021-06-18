@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 import static main.Main.mission;
 public class Map extends Menu{
     private Manager manager = new Manager();
-    ArrayList<Mission> missions = new ArrayList<>(manager.loadMissions());
+    public ArrayList<Mission> missions = new ArrayList<>(manager.loadMissions());
     public Map(Menu parent) {
         super("MAIN MENU");
         logger.start();
@@ -58,11 +58,19 @@ public class Map extends Menu{
                     }
                 }
                 else if (nextMenuNum < submenus.size() + 1 && nextMenuNum > 0) {
-                    logger.writeInfo("Submenu number "+nextMenuNum+" selected!");
-                    mission = missions.get(nextMenuNum-1);
-                    System.out.println(mission.toString());
-                    nextMenu = submenus.get(nextMenuNum);
-                    quit = true;
+                    if(!missions.get(nextMenuNum-1).isLocked())
+                    {
+                        logger.writeInfo("Submenu number "+nextMenuNum+" selected!");
+                        mission = missions.get(nextMenuNum-1);
+                        System.out.println(mission.toString());
+                        nextMenu = submenus.get(nextMenuNum);
+                        quit = true;
+                    }
+                    else
+                    {
+                        logger.writeInfo("Mission "+nextMenuNum+" is locked!");
+                        System.out.printf("Mission "+nextMenuNum+" is locked!");
+                    }
                 }
                 else
                 {

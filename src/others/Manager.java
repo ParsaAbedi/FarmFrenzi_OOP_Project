@@ -305,9 +305,24 @@ public class Manager {
 
                     }
                 }
+                else if(set.getKey() instanceof EggTask)
+                {
+                    if(((EggTask)set.getKey()).isCompleted(wareHouse))
+                    {
+                        set.setValue(true);
+                        Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                    }
+                    else
+                    {
+                        Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+
+                    }
+                }
                 else
                 {
-                    if(set.getKey().isCompleted())
+                    if(((BreadTask)set.getKey()).isCompleted(wareHouse))
                     {
                         set.setValue(true);
                         Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
@@ -638,12 +653,13 @@ public class Manager {
 
     public boolean buy(String name) {
         name=name.toLowerCase();
+        FarmPosition place =positionMaker(-1,-1);
         switch (name){
             case "cat":
                 if (purse.buy(150)){
                     purse.addCoins(-150);
                     Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
-                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Cat());
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Cat(place));
                     System.out.println("cat bought!");
                     Logger.writeInfo("cat bought!");
                     return true;
@@ -657,7 +673,7 @@ public class Manager {
                     if (purse.buy(100)){
                         purse.addCoins(-100);
                         Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
-                        farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Hound());
+                        farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Hound(place));
                         System.out.println("hound bought!");
                         Logger.writeInfo("hound bought!");
                         return true;
@@ -671,7 +687,7 @@ public class Manager {
                 if (purse.buy(100)){
                     purse.addCoins(-100);
                     Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
-                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Hen());
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Hen(place));
                     System.out.println("hen bought!");
                     Logger.writeInfo("hen bought!");
                     return true;
@@ -685,7 +701,7 @@ public class Manager {
                 if (purse.buy(400)){
                     purse.addCoins(-400);
                     Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
-                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Buffalo());
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Buffalo(place));
                     System.out.println("buffalo bought!");
                     Logger.writeInfo("buffalo bought!");
                     return true;
@@ -699,7 +715,7 @@ public class Manager {
                 if (purse.buy(200)){
                     purse.addCoins(-200);
                     Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
-                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Ostrich());
+                    farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Ostrich(place));
                     System.out.println("ostrich bought!");
                     Logger.writeInfo("ostrich bought!");
                     return true;
@@ -807,7 +823,10 @@ public class Manager {
                 }*/
                 purse.setCoins(initialCoins);
                 numOfTurns=1;
-                missions.add(new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price));
+                Mission thisMission = new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price);
+                if(thisMission.getMissionNumber()== 1)
+                    thisMission.setLocked(false);
+                missions.add(thisMission);
             }
         }
 
@@ -815,11 +834,13 @@ public class Manager {
     }
      public boolean checkTasks ()
      {
+         boolean bool = true;
          for(Map.Entry<Task,Boolean> entry : mission.getTasksCheckBoard().entrySet())
          {
              if(entry.getValue() == false)
-                 return false;
+                bool = false;
+             Logger.writeInfo(entry.getKey()+" --> "+entry.getValue()+"\n");
          }
-         return true;
+         return bool;
      }
 }

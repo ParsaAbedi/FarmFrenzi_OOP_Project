@@ -2978,3 +2978,972 @@ Task type = Egg
 
 [Info],Thu Jun 17 18:58:02 IRDT 2021,Task Done!
 
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Logged in!
+	others.Authentication@3d8314f0
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,purse comtains 400 coins
+[Info],Fri Jun 18 08:38:21 IRDT 2021,hen bought!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,purse comtains 300 coins
+[Info],Fri Jun 18 08:38:21 IRDT 2021,hen bought!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,purse comtains 200 coins
+[Info],Fri Jun 18 08:38:21 IRDT 2021,hen bought!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,purse comtains 0 coins
+[Info],Fri Jun 18 08:38:21 IRDT 2021,ostrich bought!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 08:38:21 IRDT 2021,insufficient amount of money
+[Error],Fri Jun 18 08:38:21 IRDT 2021,Task Failed!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a feather produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a feather produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a feather produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an animal died!!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an animal died!!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an animal died!!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an animal died!!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an egg produced
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an animal died!!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an animal died!!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an animal died!!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,an animal died!!
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,a product is gone
+[Info],Fri Jun 18 08:38:21 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:42:54 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 08:42:54 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:42:54 IRDT 2021,Logged in!
+	others.Authentication@3d8314f0
+[Info],Fri Jun 18 08:42:54 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 08:42:54 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 08:42:54 IRDT 2021,Mission{mission number='1', isLocked='true', initialCoins='500', maxTime='5', prize='5'}
+COMPLETED!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Logged in!
+	others.Authentication@5e57643e
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 08:43:37 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 08:43:37 IRDT 2021,hen bought!
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:43:37 IRDT 2021,planted
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 08:43:37 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:43:37 IRDT 2021,an egg produced
+[Error],Fri Jun 18 08:43:37 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Error],Fri Jun 18 08:43:37 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:43:37 IRDT 2021,an egg produced
+[Error],Fri Jun 18 08:43:37 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:43:37 IRDT 2021,picked
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 08:43:37 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:43:37 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Logged in!
+	others.Authentication@5e57643e
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Submenu number 2 selected!
+[Error],Fri Jun 18 08:55:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 08:55:15 IRDT 2021,hen bought!
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 08:55:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,an egg produced
+[Error],Fri Jun 18 08:55:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Error],Fri Jun 18 08:55:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,an egg produced
+[Error],Fri Jun 18 08:55:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,a product is gone
+[Error],Fri Jun 18 08:55:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,picked
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,an egg produced
+[Error],Fri Jun 18 08:55:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 08:55:15 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 08:55:15 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 08:57:55 IRDT 2021,Entered START MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Logged in!
+	others.Authentication@3d8314f0
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:03:52 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 09:03:52 IRDT 2021,hen bought!
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 09:03:52 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,an egg produced
+[Error],Fri Jun 18 09:03:52 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Error],Fri Jun 18 09:03:52 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,picked
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,an egg produced
+[Error],Fri Jun 18 09:03:52 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:03:52 IRDT 2021,Task Done!
+
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Logged in!
+	others.Authentication@3d8314f0
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 09:07:44 IRDT 2021,hen bought!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 09:07:44 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,an egg produced
+[Error],Fri Jun 18 09:07:44 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Error],Fri Jun 18 09:07:44 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,an egg produced
+[Error],Fri Jun 18 09:07:44 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,a product is gone
+[Error],Fri Jun 18 09:07:44 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,picked
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,an egg produced
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg
+ is completed!
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:07:44 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Error],Fri Jun 18 09:07:44 IRDT 2021,Invalid input in MAIN MENU
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Logged in!
+	others.Authentication@3d8314f0
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:08:57 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 09:08:57 IRDT 2021,hen bought!
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 09:08:57 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,an egg produced
+[Error],Fri Jun 18 09:08:57 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Error],Fri Jun 18 09:08:57 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,an egg produced
+[Error],Fri Jun 18 09:08:57 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,picked
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg
+ is completed!
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:08:57 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Logged in!
+	others.Authentication@3d8314f0
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Submenu number 2 selected!
+[Info],Fri Jun 18 09:09:49 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 09:09:49 IRDT 2021,hen bought!
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 09:09:49 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,an egg produced
+[Error],Fri Jun 18 09:09:49 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Error],Fri Jun 18 09:09:49 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,an egg produced
+[Error],Fri Jun 18 09:09:49 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,a product is gone
+[Error],Fri Jun 18 09:09:49 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,picked
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,an egg produced
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg
+ is completed!
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Mission{mission number='2', isLocked='true', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 09:09:49 IRDT 2021,Submenu number 2 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Logged in!
+	others.Authentication@3d8314f0
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Mission 2 is locked!
+[Error],Fri Jun 18 10:03:35 IRDT 2021,Invalid input in MAIN MENU
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 10:03:35 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 10:03:35 IRDT 2021,hen bought!
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 10:03:35 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,an egg produced
+[Error],Fri Jun 18 10:03:35 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Error],Fri Jun 18 10:03:35 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,an egg produced
+[Error],Fri Jun 18 10:03:35 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,picked
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg
+ is completed!
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Mission{mission number='1', isLocked='false', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 10:03:35 IRDT 2021,Mission 2 is locked!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Entered START MENU
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Submenu number 1 selected!
+--------------------
+ *PROGRAM STARTS* 
+--------------------
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Logged in!
+	others.Authentication@3d8314f0
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Mission 2 is locked!
+[Error],Fri Jun 18 10:08:58 IRDT 2021,Invalid input in MAIN MENU
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Submenu number 1 selected!
+[Info],Fri Jun 18 10:08:58 IRDT 2021,purse comtains 900 coins
+[Info],Fri Jun 18 10:08:58 IRDT 2021,hen bought!
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task Done!
+
+[Error],Fri Jun 18 10:08:58 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,an egg produced
+[Error],Fri Jun 18 10:08:58 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Error],Fri Jun 18 10:08:58 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,an egg produced
+[Error],Fri Jun 18 10:08:58 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg
+ is NOT completed!
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task definitio = task2
+Task isDone = false
+Task value = 1
+Task type = Egg --> false
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,picked
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task Done!
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,a product is gone
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task : 
+Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg
+ is completed!
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Task definitio = task2
+Task isDone = true
+Task value = 1
+Task type = Egg --> true
+
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Mission{mission number='1', isLocked='false', initialCoins='1000', maxTime='5', prize='5'}
+COMPLETED!
+[Info],Fri Jun 18 10:08:58 IRDT 2021,Submenu number 2 selected!

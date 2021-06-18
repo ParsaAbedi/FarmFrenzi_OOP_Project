@@ -1,4 +1,5 @@
 package main.menu;
+import others.Mission;
 import others.Purse;
 import others.Logger;
 
@@ -8,6 +9,8 @@ import static main.Main.mission;
 
 public class InputProcessor extends Menu{
     static int n = 1;
+    Menu nextMenu = parentMenu;
+    boolean quit = false;
     public  InputProcessor(Menu parent ){
         super(parent , "START");
     }
@@ -19,8 +22,8 @@ public class InputProcessor extends Menu{
     @Override
     public void execute() {
         String command;
-        boolean quit = false;
         manager.purse.setCoins(mission.getInitialCoins());
+        quit = false;
         while (!quit)
         {
             command = scanner.nextLine();
@@ -88,7 +91,10 @@ public class InputProcessor extends Menu{
                 logger.writeError("Invalid input!");
             }
         }
-
+        Logger.writeInfo(mission.toString()+"\nCOMPLETED!");
+        System.out.printf("Mission completed!");
+        nextMenu.show();
+        nextMenu.execute();
     }
 
     private void build(String[] strings){
@@ -154,10 +160,17 @@ public class InputProcessor extends Menu{
     }
 
     private void turn(String[] split) {
-        //TODO
         if(manager.turn(split[1]))
         {
-            done();
+            if (manager.checkTasks())
+            {
+                for(Mission mission1 : ((Map)parentMenu).missions)
+                    if(mission1.getMissionNumber()==mission.getMissionNumber()+1)
+                        mission1.setLocked(false);
+                quit=true;
+            }
+            else
+                done();
         }
         else
             error();

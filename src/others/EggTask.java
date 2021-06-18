@@ -2,6 +2,7 @@ package others;
 
 import buildings.WareHouse;
 import products.Bread;
+import products.Egg;
 import products.Milk;
 import products.Products;
 
@@ -13,13 +14,12 @@ public class EggTask extends Task{
         this.type = "Egg";
     }
 
-    @Override
-    public boolean isCompleted() {
+    public boolean isCompleted(WareHouse wareHouse) {
         int num=0;
-        ArrayList<Products> products = WareHouse.getStoredProducts();
+        ArrayList<Products> products = wareHouse.getStoredProducts();
         for(Products product : products)
         {
-            if(product instanceof Milk)
+            if(product instanceof Egg)
                 num++;
         }
         if(num<value)
