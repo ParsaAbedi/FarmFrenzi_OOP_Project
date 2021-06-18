@@ -143,7 +143,7 @@ public class Manager {
 
     public boolean unloadTruck(String productName) {
         if (!truck.isOnTheMove()) {
-            if (!suitableOne(productName).equals(null)) {
+            if (!suitableOneTruck(productName).equals(null)) {
                 Products pack = suitableOne(productName);
                 if (wareHouse.getCapacity() + pack.getCapacity() > 30) {
                     Logger.writeError("the product space is more than capacity and we can not unload it");
@@ -158,7 +158,6 @@ public class Manager {
                     return true;
                 }
             }
-            Logger.writeError("you do not have this product in your truck");
             return false;
         }
         Logger.writeError("truck is on the move");
@@ -181,7 +180,6 @@ public class Manager {
                         return true;
                     }
                 }
-            Logger.writeError("you do not have this product in your warehouse");
             return false;
         }
         Logger.writeError("truck is on the move");
@@ -230,6 +228,56 @@ public class Manager {
                 }
             case "clothes":
                 for (Products storedProduct : wareHouse.getStoredProducts()) {
+                    if (storedProduct instanceof Clothes) return storedProduct;
+                }
+
+        }
+        System.err.println("invalid input");
+        Logger.writeError("invalid input");
+        return null;
+    }
+    public Products suitableOneTruck(String name){
+        name=name.toLowerCase();
+        name=name.trim();
+        switch (name){
+            case "dead animal":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof DeadAnimal) return storedProduct;
+                }
+            case "egg":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof Egg) return storedProduct;
+                }
+            case "milk":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof Milk) return storedProduct;
+                }
+            case "feather":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof Feather) return storedProduct;
+                }
+            case "flour":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof Flour) return storedProduct;
+                }
+            case "pastorized milk":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof PastorizedMilk) return storedProduct;
+                }
+            case "ice cream":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof IceCream) return storedProduct;
+                }
+            case "bread":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof Bread) return storedProduct;
+                }
+            case "fabric":
+                for (Products storedProduct : truck.getProducts()) {
+                    if (storedProduct instanceof Piece) return storedProduct;
+                }
+            case "clothes":
+                for (Products storedProduct : truck.getProducts()) {
                     if (storedProduct instanceof Clothes) return storedProduct;
                 }
 
