@@ -182,7 +182,8 @@ public class Manager {
                         Logger.writeInfo("loading product successful ");
                         return true;
                     }
-                }
+            }
+            Logger.writeError("you do not have this product in your warehouse");
             return false;
         }
         Logger.writeError("truck is on the move");
@@ -569,6 +570,7 @@ public class Manager {
 
             }
         }
+
         System.out.println(purse.getCoins());
 
     }//DONE
@@ -617,7 +619,7 @@ public class Manager {
             line+="\n";
             txt+=line;
         }
-        Logger.drawMap(txt);
+        Logger.writeInfo(txt);
     }
     public boolean work(String workShopName) {
         workShopName = workShopName.trim();
@@ -934,7 +936,6 @@ public class Manager {
                ArrayList<WildAnimal> wildAnimals = new ArrayList<>();
                 HashMap<Task,Boolean> tasks = new HashMap<>();
                 missionNumber = Integer.parseInt(lines[cnt]);
-/*                System.out.printf("mission number: %d \n", missionNumber);*/
                 if(lines[cnt+1].equals("1"))
                     isLocked =true;
                 else
