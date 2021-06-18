@@ -7,8 +7,8 @@ public class Hound extends Animal {
     private FarmPosition farmPosition;
     private directions directions;
 
-    public Hound() {
-        super(1, Type.HOUND);
+    public Hound(FarmPosition farmPosition) {
+        super(1, Type.HOUND,farmPosition );
     }
 
     public void hunt(){

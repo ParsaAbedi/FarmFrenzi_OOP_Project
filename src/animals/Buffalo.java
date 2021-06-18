@@ -1,10 +1,11 @@
 package animals;
 
 import animals.DomesticAnimal;
+import others.FarmPosition;
 
 public class Buffalo extends DomesticAnimal {
-    public Buffalo( ) {
-        super(400 , 5,Type.BUFFALO);
+    public Buffalo( FarmPosition farmPosition) {
+        super(400 , 5,Type.BUFFALO,farmPosition);
     }
 
 

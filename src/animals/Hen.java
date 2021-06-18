@@ -1,8 +1,10 @@
 package animals;
 
+import others.FarmPosition;
+
 public class Hen extends DomesticAnimal{
-    public Hen () {
-        super(100 , 2,Type.HEN);
+    public Hen (FarmPosition farmPosition) {
+        super(100 , 2,Type.HEN,farmPosition);
     }
 
 

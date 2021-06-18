@@ -7,8 +7,8 @@ public class Cat extends Animal {
     private FarmPosition farmPosition;
     private directions directions;
 
-    public Cat() {
-        super(1, Type.CAT);
+    public Cat(FarmPosition farmPosition) {
+        super(1, Type.CAT, farmPosition);
     }
 
     public void collect(){

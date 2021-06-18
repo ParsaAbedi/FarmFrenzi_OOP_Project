@@ -17,8 +17,8 @@ public abstract class Animal {
         return type;
     }
 
-    public Animal(int velocity , Type type) {
-        setInitialPosition();
+    public Animal(int velocity , Type type,FarmPosition farmPosition) {
+        this.farmPosition=farmPosition;
         this.lives = MAX_LIVES;
         this.velocity = velocity;
         setRandomMoveDirections();
@@ -80,5 +80,9 @@ public abstract class Animal {
 
     public int getLives() {
         return lives;
+    }
+
+    public FarmPosition getFarmPosition() {
+        return farmPosition;
     }
 }

@@ -40,7 +40,7 @@ public class ProductiveBuilding extends Buildings {
             timeLeft=-1;
             return true;
         }
-        timeLeft--;
+        else if(timeLeft!=-1)timeLeft--;
         return false;
     }
 

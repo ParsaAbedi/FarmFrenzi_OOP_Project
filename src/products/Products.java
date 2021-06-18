@@ -39,11 +39,13 @@ public class Products {
     }
 
     public boolean timeChecker(){
+        System.out.println(timeLeft+
+                "we");
         if (timeLeft==1){
-            timeLeft=timeToPick;
+            timeLeft=-1;
             return true;
         }
-        timeLeft--;
+        else if (timeLeft>0)timeLeft--;
         return false;
     }
 
