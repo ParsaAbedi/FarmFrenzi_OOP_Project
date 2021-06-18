@@ -40,7 +40,7 @@ public class Manager {
     private User player ;
     private String json ;
     private Gson gson = new Gson();
-    private Coin coin;
+    public Purse purse;
     private Truck truck;
     private WareHouse wareHouse;
     private int numOfTurns;
@@ -54,11 +54,11 @@ public class Manager {
         this.weavingFactory = WeavingFactory.getInstance();
         this.truck=Truck.getInstance();
         this.wareHouse= WareHouse.getInstance();
-        this.coin = new Coin();
+        this.purse = new Purse();
     }
 
-    public void setCoin(Coin coin) {
-        this.coin = coin;
+    public void setCoin(Purse purse) {
+        this.purse = purse;
     }
 
     public boolean signup(String username , String password)
@@ -86,6 +86,7 @@ public class Manager {
             return false;
         }
     }
+
     public boolean readGsonUser()
     {
         try {
@@ -106,8 +107,6 @@ public class Manager {
         return false;
     }//DONE
 
-
-
     public boolean checkUsername(String username) {
         if(!readGsonUser())
             return false;
@@ -125,7 +124,6 @@ public class Manager {
         else
             return false;
     }//DONE
-
 
     public boolean truckGo() {
         if (!truck.isOnTheMove()){
@@ -266,24 +264,46 @@ public class Manager {
 
             }
             if (truck.timePass()){
-                coin.addCoins(truck.getValueOfGoods());
+                purse.addCoins(truck.getValueOfGoods());
             }
 
             for(HashMap.Entry<Task, Boolean> set : mission.getTasksCheckBoard().entrySet())
             {
-                //TODO
-                System.out.printf("Tasks:\n");
-                if(set.getKey().isCompleted())
+                if(set.getKey() instanceof CoinTask)
                 {
-                    Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
-                    System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                    if(((CoinTask)(set.getKey())).isCompleted(purse))
+                    {
+                        set.setValue(true);
+                        Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                    }
+                    else
+                    {
+                        Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+
+                    }
                 }
                 else
                 {
-                    Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
-                    System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+                    if(set.getKey().isCompleted())
+                    {
+                        set.setValue(true);
+                        Logger.writeInfo("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is completed!\n");
+                    }
+                    else
+                    {
+                        Logger.writeError("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
+                        System.out.println("Task : \n"+set.getKey().toString() +"\n is NOT completed!\n");
 
+                    }
                 }
+                if(checkTasks())
+                {
+                    System.out.printf("You have won!");
+                }
+
             }
             for(WildAnimal wildAnimal : mission.wildAnimals)
             {
@@ -398,7 +418,7 @@ public class Manager {
 
             }
         }
-        System.out.println(coin.getCoins());
+        System.out.println(purse.getCoins());
 
     }//DONE
 
@@ -597,8 +617,9 @@ public class Manager {
         name=name.toLowerCase();
         switch (name){
             case "cat":
-                if (coin.buy(150)){
-                    coin.addCoins(-150);
+                if (purse.buy(150)){
+                    purse.addCoins(-150);
+                    Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
                     farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Cat());
                     System.out.println("cat bought!");
                     Logger.writeInfo("cat bought!");
@@ -610,8 +631,9 @@ public class Manager {
                     return false;
                 }
                 case "hound":
-                    if (coin.buy(100)){
-                        coin.setCoins(coin.getCoins()-100);
+                    if (purse.buy(100)){
+                        purse.addCoins(-100);
+                        Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
                         farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Hound());
                         System.out.println("hound bought!");
                         Logger.writeInfo("hound bought!");
@@ -623,9 +645,9 @@ public class Manager {
                         return false;
                     }
             case "hen":
-                if (coin.buy(100)){
-                    coin.setCoins(coin.getCoins()-100);
-                    System.out.println(coin.getCoins());
+                if (purse.buy(100)){
+                    purse.addCoins(-100);
+                    Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
                     farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Hen());
                     System.out.println("hen bought!");
                     Logger.writeInfo("hen bought!");
@@ -637,8 +659,9 @@ public class Manager {
                     return false;
                 }
             case "buffalo":
-                if (coin.buy(400)){
-                    coin.setCoins(coin.getCoins()-400);
+                if (purse.buy(400)){
+                    purse.addCoins(-400);
+                    Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
                     farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Buffalo());
                     System.out.println("buffalo bought!");
                     Logger.writeInfo("buffalo bought!");
@@ -650,8 +673,9 @@ public class Manager {
                     return false;
                 }
             case "ostrich":
-                if (coin.buy(200)){
-                    coin.setCoins(coin.getCoins()-200);
+                if (purse.buy(200)){
+                    purse.addCoins(-200);
+                    Logger.writeInfo("purse comtains "+purse.getCoins()+" coins");
                     farmland.getFarmLandAnimal().put(positionMaker(-1,-1),new Ostrich());
                     System.out.println("ostrich bought!");
                     Logger.writeInfo("ostrich bought!");
@@ -672,8 +696,6 @@ public class Manager {
         if (x!=-1)return new FarmPosition(x,y);
         else return new FarmPosition(random.nextInt(6),random.nextInt(6));
     }//done
-
-
 
     public ArrayList<Mission> loadMissions()
     {
@@ -747,7 +769,7 @@ public class Manager {
                         case "Bread":
                             tasks.put(new BreadTask(lines[j], Integer.parseInt(lines[j + 1])), false);
                             break;
-                        case "Coin":
+                        case "Purse":
                             tasks.put(new CoinTask(lines[j], Integer.parseInt(lines[j + 1])), false);
                             break;
                         case "Egg":
@@ -758,7 +780,7 @@ public class Manager {
               /*  for (HashMap.Entry<Task, Boolean> set : tasks.entrySet()) {
                     System.out.println(set.getKey().definition + " = " + set.getValue() + "\t value = "+ set.getKey().value+ "\t type = "+ set.getKey().type);
                 }*/
-                coin.setCoins(initialCoins);
+                purse.setCoins(initialCoins);
                 numOfTurns=1;
                 missions.add(new Mission(missionNumber,initialCoins,wildAnimals,tasks,maxTime,price));
             }
@@ -766,4 +788,13 @@ public class Manager {
 
         return missions;
     }
+     public boolean checkTasks ()
+     {
+         for(Map.Entry<Task,Boolean> entry : mission.getTasksCheckBoard().entrySet())
+         {
+             if(entry.getValue() == false)
+                 return false;
+         }
+         return true;
+     }
 }

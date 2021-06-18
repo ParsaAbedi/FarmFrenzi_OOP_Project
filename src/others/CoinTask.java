@@ -4,11 +4,10 @@ public class CoinTask extends Task{
 
     public CoinTask(String definition , int value) {
         super(definition,value);
-        this.type = "Coin";
+        this.type = "Purse";
     }
-    @Override
-    public boolean isCompleted() {
-        if(value <Coin.getCoins())
+    public boolean isCompleted(Purse purse) {
+        if(value < purse.getCoins())
             return false;
         else
         {

@@ -26,5 +26,5 @@ Egg@
 B@
 1@
 task2@
-15@
-Coin
+1@
+Egg

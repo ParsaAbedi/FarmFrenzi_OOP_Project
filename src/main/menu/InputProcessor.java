@@ -1,13 +1,7 @@
 package main.menu;
-import animals.Bear;
-import animals.WildAnimal;
-import others.Coin;
+import others.Purse;
 import others.Logger;
-import others.Manager;
-import others.Mission;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.regex.Pattern;
 
 import static main.Main.mission;
@@ -26,7 +20,7 @@ public class InputProcessor extends Menu{
     public void execute() {
         String command;
         boolean quit = false;
-        Coin.setCoins(mission.getInitialCoins());
+        manager.purse.setCoins(mission.getInitialCoins());
         while (!quit)
         {
             command = scanner.nextLine();
@@ -228,4 +222,3 @@ public class InputProcessor extends Menu{
             error();
     }
 }
-

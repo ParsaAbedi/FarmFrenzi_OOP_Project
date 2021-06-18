@@ -3,7 +3,7 @@ public class User {
 
     String username , password ;
     int maxLevel;
-
+    private Purse purse;
     public User() {
     }
 
@@ -20,13 +20,13 @@ public class User {
         this.username = username;
         this.password = password;
         this.maxLevel = maxLevel;
-        Coin.setCoins(coinsNum);
+        purse.setCoins(coinsNum);
     }
     public User(String username, String password) {
         this.username = username;
         this.password = password;
         this.maxLevel = 1;
-        Coin.setCoins(Coin.INITIAL_COINS);
         maxLevel = 1;
+        purse.setCoins(purse.INITIAL_COINS);
     }
 }
