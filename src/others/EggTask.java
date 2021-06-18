@@ -7,9 +7,6 @@ import products.Milk;
 import products.Products;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-
-import static main.Main.mission;
 
 public class EggTask extends Task{
     public EggTask(String definition , int value) {
@@ -25,8 +22,6 @@ public class EggTask extends Task{
             if(product instanceof Egg)
                 num++;
         }
-
-            System.out.printf(definition+" : ["+num+"/"+value+"]\n");
         if(num<value)
             return false;
         else

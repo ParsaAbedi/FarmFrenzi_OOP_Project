@@ -10,7 +10,6 @@ import java.util.Date;
 
 public class Logger {
     private static String filePath = "logger.txt";
-    private static String mapPath = "map.txt";
     private PrintWriter pw = null;
     private User user;
     static Date date = new Date();
@@ -35,17 +34,6 @@ public class Logger {
 
         try {
             Files.write(Paths.get(filePath), ("[Info],"+date.toString()+","+message+"\n").getBytes(), StandardOpenOption.APPEND);
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
-        }
-        return true;
-    }
-    public static boolean drawMap(String message)
-    {
-
-        try {
-            Files.write(Paths.get(mapPath), (message).getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
             return false;
