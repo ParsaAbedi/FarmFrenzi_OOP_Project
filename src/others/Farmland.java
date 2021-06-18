@@ -55,6 +55,11 @@ public class Farmland {
         return farmLandPlant;
     }
 
+    public void farmLandToString() {
+        for (Map.Entry<FarmPosition,Integer> entry : farmLandPlant.entrySet()) {
+            System.out.println("["+entry.getKey().getX()+" "+entry.getKey().getY()+"] num of plants: "+entry.getValue());
+        }
+    }
 
     public int giveTheNumberOfPlants(FarmPosition farmPosition) {
         for (Map.Entry<FarmPosition, Integer> entry : farmLandPlant.entrySet()) {
