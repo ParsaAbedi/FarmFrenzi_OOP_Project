@@ -1,4 +1,5 @@
 package main.menu;
+import others.Farmland;
 import others.Mission;
 import others.Purse;
 import others.Logger;
@@ -24,6 +25,7 @@ public class InputProcessor extends Menu{
         String command;
         manager.purse.setCoins(mission.getInitialCoins());
         quit = false;
+        manager.clearFarmland();
         while (!quit)
         {
             command = scanner.nextLine();

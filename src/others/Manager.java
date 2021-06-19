@@ -28,7 +28,7 @@ import static main.Main.mission;
 public class Manager {
     private Random random = new Random();
     public int missionsNum = 0;
-    private Farmland farmland ;
+    public Farmland farmland ;
     private SewingWorkshop sewingWorkshop;
     private CookieBakery cookieBakery;
     private IceCreamShop iceCreamShop;
@@ -1005,5 +1005,14 @@ public class Manager {
          }
          return bool;
      }
+    public void clearFarmland()
+    {
+        farmland = new Farmland();
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                farmland.getFarmLandPlant().put(positionMaker(i,j),0);
+            }
+        }
+    }
 
 }
