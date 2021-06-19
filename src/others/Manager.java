@@ -152,7 +152,7 @@ public class Manager {
                 else {
                     truck.getProducts().remove(pack);
                     truck.setCAPACITY(truck.getCAPACITY() - pack.getCapacity());
-                    wareHouse.getStoredProducts().remove(pack);
+                    wareHouse.getStoredProducts().add(pack);
                     wareHouse.setCapacity(wareHouse.getCapacity() + pack.getCapacity());
                     Logger.writeInfo("unload product successful ");
                     return true;
@@ -182,7 +182,7 @@ public class Manager {
                         Logger.writeInfo("loading product successful ");
                         return true;
                     }
-                }
+
             }
             Logger.writeError("you do not have this product in your warehouse");
             return false;
@@ -195,7 +195,7 @@ public class Manager {
         name=name.toLowerCase();
         name=name.trim();
         switch (name){
-            case "dead animal":
+            case "deadanimal":
                 for (Products storedProduct : wareHouse.getStoredProducts()) {
                     if (storedProduct instanceof DeadAnimal) return storedProduct;
                 }
@@ -215,7 +215,7 @@ public class Manager {
                 for (Products storedProduct : wareHouse.getStoredProducts()) {
                     if (storedProduct instanceof Flour) return storedProduct;
                 }
-            case "pastorized milk":
+            case "pastorizedmilk":
                 for (Products storedProduct : wareHouse.getStoredProducts()) {
                     if (storedProduct instanceof PastorizedMilk) return storedProduct;
                 }
@@ -245,7 +245,7 @@ public class Manager {
         name=name.toLowerCase();
         name=name.trim();
         switch (name){
-            case "dead animal":
+            case "deadanimal":
                 for (Products storedProduct : truck.getProducts()) {
                     if (storedProduct instanceof DeadAnimal) return storedProduct;
                 }
@@ -265,7 +265,7 @@ public class Manager {
                 for (Products storedProduct : truck.getProducts()) {
                     if (storedProduct instanceof Flour) return storedProduct;
                 }
-            case "pastorized milk":
+            case "pastorizedmilk":
                 for (Products storedProduct : truck.getProducts()) {
                     if (storedProduct instanceof PastorizedMilk) return storedProduct;
                 }
@@ -308,7 +308,7 @@ public class Manager {
 
             }
             for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet())   {
-                if (entry.getValue() instanceof DomesticAnimal){
+                if (entry.getValue() instanceof DomesticAnimal && entry.getValue().getLives()>0){
                     if (((DomesticAnimal)entry.getValue()).itIsTheTime()){
                         switch (((DomesticAnimal)entry.getValue()).getKind()){
                             case OSTRICH:
@@ -502,12 +502,12 @@ public class Manager {
     }//DONE
 
     public void inquiry() {
-        System.out.println(numOfTurns);
+        System.out.println("we are in turn :"+numOfTurns);
         //farmland.farmLandToString();
         int num = 1;
 
         for (Map.Entry<FarmPosition, Animal> entry : farmland.getFarmLandAnimal().entrySet()) {
-            if (entry.getValue() instanceof DomesticAnimal) {
+            if (entry.getValue() instanceof DomesticAnimal && entry.getValue().getLives()>0) {
                 if (entry.getValue() instanceof Hen) {
                     System.out.println("hen " + num + " %" + entry.getValue().getLives()+
                             " ["+entry.getKey().getX()+" "+entry.getKey().getY()+"]");
@@ -572,7 +572,7 @@ public class Manager {
             }
         }
 
-        System.out.println(purse.getCoins());
+        System.out.println("you have "+purse.getCoins()+" coins");
 
     }//DONE
 
@@ -589,7 +589,7 @@ public class Manager {
                 String sqr = "";
                 for(Map.Entry<FarmPosition,Animal> entry : farmland.getFarmLandAnimal().entrySet())
                 {
-                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y)
+                    if(entry.getKey().getX()==x&& entry.getKey().getY()== y && entry.getValue().getLives()>0)
                     {
                         sqr+=entry.getValue().getType().toString().substring(0,1);
                     }
@@ -620,7 +620,7 @@ public class Manager {
             line+="\n";
             txt+=line;
         }
-        Logger.drawMap(txt);
+        Logger.writeError(txt);
     }
     public boolean work(String workShopName) {
         workShopName = workShopName.trim();
@@ -965,7 +965,7 @@ public class Manager {
                 }
 /*                for(WildAnimal w: wildAnimals)
                     System.out.println(w.toString());*/
-                for( int j=i ; j<i+2*tasksNumber-2 ; j+=3) {
+                for( int j=i ; j<i+2*tasksNumber ; j+=3) {
                     String type = lines[i + 2];
                     switch (type) {
                         case "Bread":
